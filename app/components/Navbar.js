@@ -6,7 +6,6 @@ import Link from "next/link";
 import { Phone, Mail, ChevronDown, Menu, X } from "lucide-react";
 import shivji from "../assets/shiv.avif";
 import temple from "../assets/temple.jpg";
-// import trishul from "../assets/trishul.jpg";
 import Damroo from "../assets/Damroo.png";
 import omGif from "../assets/omGif.gif";
 import trishulGif from "../assets/trishulGif.gif";
@@ -14,13 +13,17 @@ import bellsGif from "../assets/bellsGif.gif";
 import styles from "./Navbar.module.css";
 import { menuLinks, navMenu } from "../Data/navData";
 import WhatsAppButton2 from "./WhatsAppButton2";
+import { useMediaQuery } from "@mui/material";
+
 
 export default function Navbar() {
 
     const [activeDropdown, setActiveDropdown] = useState(null);
     const [activeInnerDropdown, setActiveInnerDropdown] = useState(null);
     const [menuOpen, setMenuOpen] = useState(false);
-    const [isMobile, setIsMobile] = useState(false);
+    
+    const isMobile = useMediaQuery("(max-width:1275px)");
+
     const [expandedItems, setExpandedItems] = useState({});
 
     const handleMouseEnter = (title) => {
@@ -40,21 +43,7 @@ export default function Navbar() {
         setActiveInnerDropdown(null);
     };
 
-    useEffect(() => {
-        const handleResize = () => {
-            const mobile = window.innerWidth <= 1275;
-            setIsMobile(mobile);
-            if (!mobile) setMenuOpen(false);
-        };
 
-        handleResize();
-        window.addEventListener("resize", handleResize);
-
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-
-    }, []);
 
     useEffect(() => {
         document.body.style.overflow = menuOpen ? "hidden" : "auto";
