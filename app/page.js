@@ -21,7 +21,7 @@ export default function Home() {
                 <ThingsToDoInUjjain />
                 <PlacesNearUjjain />
                 <Awards />
-                {/* <Contact /> */}
+                <Contact />
             </main>
         </>
     );

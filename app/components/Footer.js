@@ -61,9 +61,9 @@ function Footer() {
                     <div className={styles.section}>
                         <h4 className={styles.title}>Contact</h4>
                         <ul className={styles.infoList}>
-                            <li><MapPin size={18} className={styles.iconInline} /> Mahakaleshwar Temple, Ujjain, MP</li>
-                            <li><Phone size={18} className={styles.iconInline} /> +91 XXXXX XXXXX</li>
-                            <li><Mail size={18} className={styles.iconInline} /> info@mahakaleshwarguide.com</li>
+                            <li><MapPin size={18} className={styles.iconInline} /> Skye Earth Corporate Park, 1206 E, opp. Shalimar Township, Indore, Madhya Pradesh 452010</li>
+                            <li><Phone size={18} className={styles.iconInline} /> +91 9111452099</li>
+                            <li><Mail size={18} className={styles.iconInline} />info@ujjainmahakal.com</li>
                         </ul>
                     </div>
                 </div>

@@ -196,13 +196,7 @@ export default function Navbar() {
                                 </div>
 
                                 <div className={styles.middleAssets}>
-                                    {/* <Image 
-                                        src={bellsGif} 
-                                        alt="Description of GIF" 
-                                        width={70} 
-                                        height={70} 
-                                        unoptimized // Add this for GIFs to prevent optimization
-                                    /> */}
+                                  
                                     <Image
                                         src={trishulGif}
                                         alt="Description of GIF"
@@ -233,13 +227,7 @@ export default function Navbar() {
                                         height={70}
                                         unoptimized // Add this for GIFs to prevent optimization
                                     />
-                                    {/* <Image 
-                                        src={trishul} 
-                                        alt="Trishul" 
-                                        width={70} 
-                                        height={70} 
-                                        className={`${styles.image11} ${styles.image3}`}
-                                    /> */}
+                                   
                                     <Image
                                         src={Damroo}
                                         alt="Damroo"
@@ -260,27 +248,28 @@ export default function Navbar() {
                                 </div>
 
                                 <div className={styles.contactRight}>
+                                   
                                     <div className={styles.contactItem}>
 
                                         <div className={styles.animatedBorderBox}>
                                             <span>Call Us:</span>
                                             <Phone size={16} />
-                                            <a className={styles.number} href="tel:+91123456789">+91 123456789</a>
+                                            <a className={styles.number} href="tel:+919111452099">+91 9111452099</a>
                                         </div>
 
-                                        <WhatsAppButton2 style={{ marginLeft: "15px" }} />
+                                           <WhatsAppButton2 style={{ marginLeft: "15px" }} />
 
                                     </div>
                                     <div className={styles.contactItem}>
                                         <span>Mail Us:</span>
                                         <Mail size={16} />
-                                        <a className={styles.mail} href="mailto:info@mahakaleshwarguide.com">info@mahakaleshwarguide.com</a>
+                                        <a className={styles.mail} href="mailto:info@ujjainmahakal.com">info@ujjainmahakal.com</a>
                                     </div>
                                 </div>
                             </div>
 
                             <nav className={styles.bottomNav}>
-                                <div className={styles.container}>
+                                <div className={styles.container2}>
                                     <ul className={styles.navList}>
                                         {
                                             navMenu.map((item, index) => (
@@ -558,11 +547,11 @@ export default function Navbar() {
                                 <div className={styles.mobileFooter}>
                                     <div className={styles.mobileContactItem}>
                                         <Phone size={10} />
-                                        <a href="tel:+91123456789">+91 123456789</a>
+                                        <a href="tel:+919111452099">+91 9111452099</a>
                                     </div>
                                     <div className={styles.mobileContactItem}>
                                         <Mail size={10} />
-                                        <a href="mailto:info@mahakaleshwarguide.com">info@mahakaleshwarguide.com</a>
+                                        <a href="mailto:info@ujjainmahakal.com">info@ujjainmahakal.com</a>
                                     </div>
                                 </div>
                             </div>

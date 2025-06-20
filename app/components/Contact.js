@@ -72,32 +72,30 @@ export default function Contact() {
 
             <div className={styles.contactContent}>
                 <div className={styles.contactLeft}>
-                    {/* <div className={styles.contactInfo}>
+                    <div className={styles.contactInfo}>
                         <div className={styles.infoItem}>
                             <h3><MapPin size={20} /> Address</h3>
-                            <p>Mahakaleshwar Temple Road, Ujjain, Madhya Pradesh 456006</p>
+                            <p>Skye Earth Corporate Park, 1206 E, opp. Shalimar Township, Indore, Madhya Pradesh 452010</p>
                         </div>
 
                         <div className={styles.infoItem}>
                             <h3><Phone size={20} /> Phone</h3>
-                            <p>+91 1234567890</p>
+                            <p>+91 9111452099</p>
                         </div>
 
                         <div className={styles.infoItem}>
                             <h3><Mail size={20} /> Email</h3>
-                            <p>info@mahakaleshwartemple.com</p>
+                            <p>info@ujjainmahakal.com</p>
                         </div>
-                    </div> */}
+                    </div>
 
-                    {/* <div className={styles.mapContainer}>
-                       <div className={styles.mapContainer}>
-    <MapEmbed />
-</div>
+                    <div className={styles.mapContainer}>
+                        <MapEmbed />
+                    </div>
 
-                    </div> */}
                 </div>
 
-                {/* <form className={styles.contactForm} onSubmit={handleSubmit} noValidate>
+                <form className={styles.contactForm} onSubmit={handleSubmit} noValidate>
                     <div className={styles.formRow}>
                         <div className={styles.formGroup}>
                             <label htmlFor="name">Name</label>
@@ -160,7 +158,7 @@ export default function Contact() {
                     <button type="submit" className={styles.submitButton}>
                         Send Message
                     </button>
-                </form> */}
+                </form>
             </div>
         </Wrapper>
     );

@@ -18,7 +18,7 @@
 .logoSection {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0 ;
+    padding: 1rem 10px ;
     align-items: center;
     flex-wrap: wrap;
     background-color: #fff;
@@ -486,16 +486,27 @@
 
 /* Bottom Navigation */
 .bottomNav {
-    background: linear-gradient(to right, #f17525, #e46e0f, #d45600);
-    border-bottom: 3px solid rgba(0, 0, 0, 0.1);
-    position: sticky;
+    /* position: sticky;
     bottom: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 100; */
+
+     width: 100%;
+    background: linear-gradient(to right, #f17525, #e46e0f, #d45600);
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* gap: 10px; */
+    justify-content: center;
+    transition: all 0.3s ease;
 }
 
 .container {
     padding: 0 1rem;
+    width: 100%;
+}
+
+.container2 {
+    padding: 0 5px;
     width: 100%;
 }
 
@@ -509,9 +520,12 @@
 }
 
 .navList {
+
     display: flex;
     justify-content: space-between;
-    /* margin: 0 auto; */
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
     list-style: none;
 }
 
