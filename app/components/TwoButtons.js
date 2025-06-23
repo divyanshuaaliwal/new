@@ -30,10 +30,7 @@ const TwoButtons = ({category, slug}) => {
                 href={`/${category}/${slug}`}
                 className={styles.bookButton}
             >
-
                 Enquire Now
-                {/* <ArrowRight size={18} style={{ verticalAlign: 'middle', marginLeft: 6 }} /> */}
-
             </Link>
 
         </div>

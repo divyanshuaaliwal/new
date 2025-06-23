@@ -38,14 +38,18 @@ export default function BhasmAarti() {
                     <div className={styles.heroGrid3}>
 
                         <div className={styles.videoWrapper}>
-                            <video
-                                className={styles.videoElement}
-                                src={v1}
-                                loop
-                                autoPlay
-                                muted={true}
-                                playsInline
-                            />
+                       <video
+    className={styles.videoElement}
+    src={v1}
+    loop
+    autoPlay
+    muted
+    playsInline="true"
+    preload="auto"
+    controls={false}
+    disablePictureInPicture
+/>
+
                             <div className={styles.videoOverlay}></div>
                         </div>
 
@@ -121,14 +125,18 @@ export default function BhasmAarti() {
                         </section>
 
                         <div className={styles.videoWrapper}>
-                            <video
-                                className={styles.videoElement}
-                                src={cultural_impact}
-                                loop
-                                autoPlay
-                                muted={true}
-                                playsInline
-                            />
+                           <video
+    className={styles.videoElement}
+    src={cultural_impact}
+    loop
+    autoPlay
+    muted
+    playsInline="true"
+    preload="auto"
+    controls={false}
+    disablePictureInPicture
+/>
+
                             <div className={styles.videoOverlay}></div>
                         </div>
                     </div>
@@ -140,14 +148,18 @@ export default function BhasmAarti() {
                     <div className={styles.heroGrid3}>
 
                         <div className={styles.videoWrapper}>
-                            <video
-                                className={styles.videoElement}
-                                src={ujjainLast}
-                                loop
-                                autoPlay
-                                muted={true}
-                                playsInline
-                            />
+                           <video
+    className={styles.videoElement}
+    src={ujjainLast}
+    loop
+    autoPlay
+    muted
+    playsInline="true"
+    preload="auto"
+    controls={false}
+    disablePictureInPicture
+/>
+
                             <div className={styles.videoOverlay}></div>
                         </div>
 

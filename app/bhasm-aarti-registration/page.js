@@ -30,29 +30,7 @@ export default function BhasmAarti() {
 
         <BhasmAartiBooking/>
 
-            {/* <div className={styles.heroSection1}>
 
-                <div className={styles.heroOverlay}>
-
-                    <h1 className={styles.heroHeading}>
-                        <span className={styles.om}>ॐ</span> Bhasm Aarti
-                    </h1>
-
-                    <h2 className={styles.heroSubheading}>Shri Mahakaleshwar Temple, Ujjain</h2>
-
-                    <div className={styles.divider}></div>
-
-                    <p className={styles.heroText}>
-                        Experience the divine ritual of cosmic transformation
-                    </p>
-
-                    <button onClick={handleBookNow} className={styles.bookNowButtonHero}>
-                        Book Now <CheckCircle size={16} className={styles.icon} style={{ marginRight: '6px', }} />
-                    </button>
-
-                </div>
-
-            </div> */}
 
             {/* Main Content Container */}
             <div className={styles.container}>
@@ -68,14 +46,18 @@ export default function BhasmAarti() {
                     <div className={styles.heroGrid3}>
 
                         <div className={styles.videoWrapper}>
-                            <video
-                                className={styles.videoElement}
-                                src={v1}
-                                loop
-                                autoPlay
-                                muted={true}
-                                playsInline
-                            />
+                           <video
+    className={styles.videoElement}
+    src={v1}
+    loop
+    autoPlay
+    muted
+    playsInline="true"
+    preload="auto"
+    controls={false}
+    disablePictureInPicture
+/>
+
                             <div className={styles.videoOverlay}></div>
                         </div>
 
@@ -151,14 +133,18 @@ export default function BhasmAarti() {
                         </section>
 
                         <div className={styles.videoWrapper}>
-                            <video
-                                className={styles.videoElement}
-                                src={cultural_impact}
-                                loop
-                                autoPlay
-                                muted={true}
-                                playsInline
-                            />
+                          <video
+    className={styles.videoElement}
+    src={cultural_impact}
+    loop
+    autoPlay
+    muted
+    playsInline="true"
+    preload="auto"
+    controls={false}
+    disablePictureInPicture
+/>
+
                             <div className={styles.videoOverlay}></div>
                         </div>
                     </div>
@@ -170,14 +156,18 @@ export default function BhasmAarti() {
                     <div className={styles.heroGrid3}>
 
                         <div className={styles.videoWrapper}>
-                            <video
-                                className={styles.videoElement}
-                                src={ujjainLast}
-                                loop
-                                autoPlay
-                                muted={true}
-                                playsInline
-                            />
+                          <video
+    className={styles.videoElement}
+    src={ujjainLast}
+    loop
+    autoPlay
+    muted
+    playsInline="true"
+    preload="auto"
+    controls={false}
+    disablePictureInPicture
+/>
+
                             <div className={styles.videoOverlay}></div>
                         </div>
 

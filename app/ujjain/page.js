@@ -127,7 +127,7 @@ const Temples = ({ temple }) => {
 export default function UjjainDarshan() {
 
 
-    const { getSubtitle, getListWithoutLines } = useInternalPageContext();
+    const { getListWithoutLines } = useInternalPageContext();
 
 
 
@@ -164,14 +164,18 @@ export default function UjjainDarshan() {
                     <div className={styles.heroGrid3}>
 
                         <div className={styles.videoWrapper}>
-                            <video
-                                className={styles.videoElement}
-                                src={v1}
-                                loop
-                                autoPlay
-                                muted={true}
-                                playsInline
-                            />
+                        <video
+    className={styles.videoElement}
+    src={v1}
+    loop
+    autoPlay
+    muted
+    playsInline="true"
+    preload="auto"
+    controls={false}
+    disablePictureInPicture
+/>
+
                             <div className={styles.videoOverlay}></div>
                         </div>
 
@@ -232,14 +236,18 @@ export default function UjjainDarshan() {
                     <div className={styles.heroGrid3}>
 
                         <div className={styles.videoWrapper}>
-                            <video
-                                className={styles.videoElement}
-                                src={spiritual_significance}
-                                loop
-                                autoPlay
-                                muted={true}
-                                playsInline
-                            />
+                         <video
+    className={styles.videoElement}
+    src={spiritual_significance}
+    loop
+    autoPlay
+    muted
+    playsInline="true"
+    preload="auto"
+    controls={false}
+    disablePictureInPicture
+/>
+
                             <div className={styles.videoOverlay}></div>
                         </div>
 
@@ -278,9 +286,13 @@ export default function UjjainDarshan() {
                                 src={templeVideo}
                                 loop
                                 autoPlay
-                                muted={true}
-                                playsInline
+                                muted
+                                playsInline="true"
+                                preload="auto"
+                                controls={false}
+                                disablePictureInPicture
                             />
+
                             <div className={styles.videoOverlay}></div>
                         </div>
                     </div>

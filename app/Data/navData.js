@@ -22,7 +22,7 @@ export const menuLinks = [
     },
     { title: "Hotels in MP", path: "/hotels-in-mp", dropdown: false },
     { title: "B2B Registration", path: "/b2b-registration", dropdown: false },
-    { title: "Booking Form", path: "/booking-form", dropdown: false },
+    { title: "Enquiry Form", path: "/enquiry-form", dropdown: false },
     { title: "Pay Online", path: "/pay-online", dropdown: false },
     {
         title: "Use Full Links",
@@ -121,16 +121,7 @@ export const navMenu = [
             path: `/pooja-booking/${pooja.slug}`,
         }))     
     },
-    {
-        title: "Near By Places",
-        path: "/places-near-ujjain",
-        dropdown: false,
-    },
-    {
-        title: "Things to do",
-        path: "/things-to-do",
-        dropdown: false,
-    },
+    
     {
         title: "Simhastha 2028",
         path: "/simahasta-2018-news",
@@ -143,6 +134,22 @@ export const navMenu = [
             { title: "Luxury Cars", path: "/vip/luxury-cars" },
             { title: "Security Services", path: "/vip/security-services" },
         ]
+    },
+    {
+        title: "Explore Ujjain",
+        dropdown: true,
+        dropdownItems : [
+            {
+                title: "Things to do",
+                path: "/things-to-do",
+                dropdown: false,
+            },
+            {
+                title: "Near By Places",
+                path: "/places-near-ujjain",
+                dropdown: false,
+            },
+        ],  
     },
 
 ];

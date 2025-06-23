@@ -78,7 +78,7 @@
     margin-bottom: 12px;
 
     display: -webkit-box;
-    -webkit-line-clamp: 1; /* limit to 2 lines */
+    -webkit-line-clamp: 1; /* limit to 1 lines */
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -158,6 +158,10 @@
 
 @media (max-width: 550px) {
 
+    .packageTitle {
+        -webkit-line-clamp: 2; /* limit to 2 lines */
+    }
+    
     .tourGrid {
        grid-template-columns: 1fr;
     }

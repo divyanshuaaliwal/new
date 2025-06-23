@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import styles from './page.module.css';
 import { InternalPageHeading } from '../MainLayouts';
+import Link from 'next/link';
 
 export default function VIPDarshanForm() {
     const [formData, setFormData] = useState({
@@ -64,17 +65,16 @@ export default function VIPDarshanForm() {
         }
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit =  (e) => {
         e.preventDefault();
         if (validate()) {
             setIsSubmitting(true);
 
-            try {
-                await new Promise(resolve => setTimeout(resolve, 1000));
+          
                 console.log('VIP Darshan Form Submitted:', formData);
                 setIsSuccess(true);
 
-                setTimeout(() => {
+                
                     setFormData({
                         name: '',
                         email: '',
@@ -88,16 +88,14 @@ export default function VIPDarshanForm() {
                         country: '',
                         pincode: ''
                     });
-                    setIsSuccess(false);
-                }, 10000);
-            } catch (error) {
-                console.error('Error:', error);
-            } finally {
+                   
+          
+          
                 setIsSubmitting(false);
-            }
+            
         }
     };
-
+    
     return (
         <div className={styles.wrapperContainer}>
             <div className={styles.formContainer}>
@@ -111,6 +109,9 @@ export default function VIPDarshanForm() {
                         </svg>
                         <h2>Thank you!</h2>
                         <p>Your VIP Darshan request has been received.</p>
+                           <Link href="/" className={styles.goHomeButton}>
+                                                     Go to Home
+                                                 </Link>
                     </div>
                 ) : (
                     <form onSubmit={handleSubmit} className={styles.form}>

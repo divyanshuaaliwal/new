@@ -133,7 +133,7 @@ export default function HelicopterTourPage() {
                             <strong><Tag size={16} className={styles.icon} /> Price:</strong>{' '}
                             <span className={styles.currentPrice}>₹{vehicle.pricing.current_price}</span>{' '}
                             <span className={styles.originalPrice}>₹{vehicle.pricing.original_price}</span>{' '}
-                            <span className={styles.saving}>(Save ₹{vehicle.pricing.discount_amount})</span>
+                            <span className={styles.saving}>(Save {vehicle.pricing.discount_percentage} %)</span>
                         </p>
                         <Stack spacing={1} direction="row" alignItems="center" className={styles.ratingParent}>
                             <Star size={16} className={styles.icon} />

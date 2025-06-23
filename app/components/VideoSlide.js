@@ -28,14 +28,17 @@ const VideoSlide = ({ video }) => {
 
     return (
         <div className={styles.videoWrapper}>
-            <video
+              <video
                 ref={videoRef}
                 className={styles.videoElement}
                 src={video.src}
                 loop
                 autoPlay
-                muted={true}
-                playsInline
+                muted
+                playsInline="true"
+                preload="auto"
+                controls={false}
+                disablePictureInPicture
             />
             <div className={styles.videoOverlay}></div>
         </div>

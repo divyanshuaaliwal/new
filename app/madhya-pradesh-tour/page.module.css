@@ -251,7 +251,7 @@
 }
 
 .ratingContainer {
-    text-align: center;
+    /* text-align: center; */
 }
 
 .ratingWrapper {
@@ -402,6 +402,7 @@
 }
 
 @media (min-width: 480px) {
+    
     .mainContent {
         padding-left: 1rem;
         padding-right: 1rem;

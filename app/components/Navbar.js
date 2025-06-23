@@ -6,6 +6,8 @@ import Link from "next/link";
 import { Phone, Mail, ChevronDown, Menu, X } from "lucide-react";
 import shivji from "../assets/shiv.avif";
 import temple from "../assets/temple.jpg";
+import phnLogo from "../assets/logoPhone.png";
+import lapLogo from "../assets/logoLaptop.png";
 import Damroo from "../assets/Damroo.png";
 import omGif from "../assets/omGif.gif";
 import trishulGif from "../assets/trishulGif.gif";
@@ -69,13 +71,18 @@ export default function Navbar() {
                 {
                     isMobile && (
                         <div className={styles.mobileMenuToggle}>
+                           
+                            <div className={styles.mobileLogoContainer}>      
+                                <Image src={phnLogo} width={200} height={200} alt="Logo" />
+                            </div>
+                            
                             <button
                                 className={styles.hamburgerButton}
                                 onClick={() => setMenuOpen(!menuOpen)}
                                 aria-label={menuOpen ? "Close menu" : "Open menu"}
                             >
                                 {
-                                    menuOpen ? <X size={24} /> : <Menu size={24} />
+                                    !menuOpen && <Menu size={24} />
                                 }
                             </button>
                         </div>
@@ -185,10 +192,10 @@ export default function Navbar() {
                             {/* Middle Part */}
                             <div className={styles.logoSection}>
                                 <div className={styles.logoLeft}>
-                                    <div>
-                                        <h1 className={styles.logoTitle}>Ujjain Mahakal</h1>
-                                        <p className={styles.logoSubtitle}>Spiritual Journey</p>
-                                    </div>
+                                  <div>
+  <Image src={lapLogo} width={70} height={60} alt="Logo" />
+</div>
+
                                     <div>
                                         <div className={styles.approvedText}>Approved by</div>
                                         <div className={styles.approvedBy}>Madhya Pradesh Tourism</div>
@@ -256,11 +263,10 @@ export default function Navbar() {
                                             <Phone size={16} />
                                             <a className={styles.number} href="tel:+919111452099">+91 9111452099</a>
                                         </div>
-
-                                           <WhatsAppButton2 style={{ marginLeft: "15px" }} />
+                                           <WhatsAppButton2 />
 
                                     </div>
-                                    <div className={styles.contactItem}>
+                                    <div className={styles.contactItem2}>
                                         <span>Mail Us:</span>
                                         <Mail size={16} />
                                         <a className={styles.mail} href="mailto:info@ujjainmahakal.com">info@ujjainmahakal.com</a>
@@ -308,58 +314,62 @@ export default function Navbar() {
 
 
 
-                                                    {item.dropdown && activeDropdown === item.title && item.dropdownItems?.length > 0 && (
-                                                        <ul className={`${styles.dropdownBottom} ${item.dropdownItems.some(di => di.innerDropdown) ? '' : styles.active}`}>
-                                                            {item.dropdownItems.map((subItem, subIndex) => (
-                                                                <li
-                                                                    key={subIndex}
-                                                                    onMouseEnter={() => handleInnerItemsMouseEnter(subItem.title)}
-                                                                    onMouseLeave={handleInnerItemsMouseLeave}
-                                                                >
-                                                                    <Link
-                                                                        href={subItem.path || "/"}
-                                                                        className={styles.dropdownLink}
-                                                                    >
-                                                                        {subItem.title}
-                                                                        {subItem.innerDropdown && (
-                                                                            <svg
-                                                                                className={`${styles.innerDropdownIcon} ${activeInnerDropdown === subItem.title ? styles.rotate : ""}`}
-                                                                                width="12"
-                                                                                height="12"
-                                                                                viewBox="0 0 24 24"
-                                                                                fill="none"
+                                                    {
+                                                        item.dropdown && activeDropdown === item.title && item.dropdownItems?.length > 0 && (
+                                                            <ul className={`${styles.dropdownBottom} ${item.dropdownItems.some(di => di.innerDropdown) ? '' : styles.active}`}>
+                                                                {
+                                                                    item.dropdownItems.map((subItem, subIndex) => (
+                                                                        <li
+                                                                            key={subIndex}
+                                                                            onMouseEnter={() => handleInnerItemsMouseEnter(subItem.title)}
+                                                                            onMouseLeave={handleInnerItemsMouseLeave}
+                                                                        >
+                                                                            <Link
+                                                                                href={subItem.path || "/"}
+                                                                                className={styles.dropdownLink}
                                                                             >
-                                                                                <path
-                                                                                    d="M9 6L15 12L9 18"
-                                                                                    stroke="currentColor"
-                                                                                    strokeWidth="2"
-                                                                                    strokeLinecap="round"
-                                                                                    strokeLinejoin="round"
-                                                                                />
-                                                                            </svg>
-                                                                        )}
-                                                                    </Link>
+                                                                                {subItem.title}
+                                                                                {subItem.innerDropdown && (
+                                                                                    <svg
+                                                                                        className={`${styles.innerDropdownIcon} ${activeInnerDropdown === subItem.title ? styles.rotate : ""}`}
+                                                                                        width="12"
+                                                                                        height="12"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        fill="none"
+                                                                                    >
+                                                                                        <path
+                                                                                            d="M9 6L15 12L9 18"
+                                                                                            stroke="currentColor"
+                                                                                            strokeWidth="2"
+                                                                                            strokeLinecap="round"
+                                                                                            strokeLinejoin="round"
+                                                                                        />
+                                                                                    </svg>
+                                                                                )}
+                                                                            </Link>
 
-                                                                    {subItem.innerDropdown &&
-                                                                        activeInnerDropdown === subItem.title &&
-                                                                        subItem.innerDropdownItems?.length > 0 && (
-                                                                            <ul className={styles.innerDropdown}>
-                                                                                {subItem.innerDropdownItems.map((innerItem, innerIndex) => (
-                                                                                    <li key={innerIndex}>
-                                                                                        <Link
-                                                                                            href={innerItem.path || "/"}
-                                                                                            className={styles.innerDropdownLink}
-                                                                                        >
-                                                                                            {innerItem.innerTitle}
-                                                                                        </Link>
-                                                                                    </li>
-                                                                                ))}
-                                                                            </ul>
-                                                                        )}
-                                                                </li>
-                                                            ))}
-                                                        </ul>
-                                                    )}
+                                                                            {subItem.innerDropdown &&
+                                                                                activeInnerDropdown === subItem.title &&
+                                                                                subItem.innerDropdownItems?.length > 0 && (
+                                                                                    <ul className={styles.innerDropdown}>
+                                                                                        {subItem.innerDropdownItems.map((innerItem, innerIndex) => (
+                                                                                            <li key={innerIndex}>
+                                                                                                <Link
+                                                                                                    href={innerItem.path || "/"}
+                                                                                                    className={styles.innerDropdownLink}
+                                                                                                >
+                                                                                                    {innerItem.innerTitle}
+                                                                                                </Link>
+                                                                                            </li>
+                                                                                        ))}
+                                                                                    </ul>
+                                                                                )}
+                                                                        </li>
+                                                                    ))
+                                                                }
+                                                            </ul>
+                                                        )
+                                                    }
 
                                                 </li>
                                             ))
@@ -378,7 +388,9 @@ export default function Navbar() {
                             <div className={styles.mobileSidebarContent}>
 
                                 <div className={styles.mobileMenuHeader}>
-                                    <h2>Menu</h2>
+                        
+                                    <Image src={phnLogo} width={40} height={40} alt="Logo" />
+
                                     <button onClick={closeMobileMenu} className={styles.closeButton}>
                                         <X size={24} />
                                     </button>

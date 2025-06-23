@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import styles from './page.module.css';
 import { InternalPageHeading } from '../MainLayouts';
+import Link from 'next/link';
 
 export default function UserEnquiryForm() {
     const [formData, setFormData] = useState({
@@ -53,37 +54,33 @@ export default function UserEnquiryForm() {
         }
     };
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        if (validate()) {
-            setIsSubmitting(true);
+    const handleSubmit = (e) => {
+    e.preventDefault();
 
-            try {
-                await new Promise(resolve => setTimeout(resolve, 1000));
-                console.log('Form Submitted:', formData);
-                setIsSuccess(true);
+    if (!validate()) return;
+        
+    setIsSubmitting(true);
 
-                setTimeout(() => {
-                    setFormData({
-                        name: '',
-                        email: '',
-                        phone: '',
-                        subject: '',
-                        message: '',
-                        city: '',
-                        state: '',
-                        country: '',
-                        pincode: ''
-                    });
-                    setIsSuccess(false);
-                }, 10000);
-            } catch (error) {
-                console.error('Error:', error);
-            } finally {
-                setIsSubmitting(false);
-            }
-        }
-    };
+    console.log('Form Submitted:', formData);
+    setIsSuccess(true);
+
+   
+        setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            subject: '',
+            message: '',
+            city: '',
+            state: '',
+            country: '',
+            pincode: ''
+        });
+        setIsSubmitting(false); 
+
+    
+};
+
 
     return (
         <div className={styles.wrapperContainer}>
@@ -91,14 +88,19 @@ export default function UserEnquiryForm() {
                 <InternalPageHeading title="User Enquiry Form" />
 
                 {isSuccess ? (
-                      <div className={styles.successMessage}>
-                                            <svg className={styles.checkmark} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-                                                <circle className={styles.checkmarkCircle} cx="26" cy="26" r="25" fill="none" />
-                                                <path className={styles.checkmarkCheck} fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
-                                            </svg>
-                                            <h2>Thank you!</h2>
-                                            <p>We have received your request.</p>
-                                        </div>
+                     <div className={styles.successMessage}>
+                                                <svg className={styles.checkmark} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                            <circle className={styles.checkmarkCircle} cx="26" cy="26" r="25" fill="none" />
+                            <path className={styles.checkmarkCheck} fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                        </svg>
+                                                 <h2>Thank you!</h2>
+                                                 <p>We have received your request.</p>
+                     
+                                                 <Link href="/" className={styles.goHomeButton}>
+                                                     Go to Home
+                                                 </Link>
+                     
+                                             </div>
                 ) : (
                     <form onSubmit={handleSubmit} className={styles.form}>
                         {['name', 'email', 'phone', 'subject', 'city', 'state', 'country', 'pincode'].map((field) => (

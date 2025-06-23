@@ -8,13 +8,17 @@ const Page = () => {
     return (
         <div className={styles.container}>
             <video
-                className={styles.video}
-                src={v1}
-                loop
-                autoPlay
-                muted={true}
-                playsInline
-            />
+    className={styles.video}
+    src={v1}
+    loop
+    autoPlay
+    muted
+    playsInline="true"
+    preload="auto"
+    controls={false}
+    disablePictureInPicture
+/>
+
             <div className={styles.overlay}>
                 <h1>Coming Soon</h1>
             </div>

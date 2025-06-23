@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { InternalPageHeading } from '../MainLayouts';
 import styles from './page.module.css';
 import { useState } from 'react';
@@ -53,32 +54,26 @@ export default function B2BRegistrationForm() {
         }
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
         if (validate()) {
             setIsSubmitting(true);
-            try {
-                // Simulated submission
-                await new Promise(resolve => setTimeout(resolve, 1000));
-                console.log('Form Submitted:', formData);
-                setIsSuccess(true);
 
-                // Reset form after success
-                setTimeout(() => {
-                    setFormData({
-                        name: '',
-                        email: '',
-                        phone: '',
-                        amount: '',
-                        additionalInfo: ''
-                    });
-                    setIsSuccess(false);
-                }, 10000);
-            } catch (error) {
-                console.error('Error submitting form:', error);
-            } finally {
-                setIsSubmitting(false);
-            }
+            console.log('Form Submitted:', formData);
+            setIsSuccess(true);
+
+
+            setFormData({
+                name: '',
+                email: '',
+                phone: '',
+                amount: '',
+                additionalInfo: ''
+            });
+
+
+            setIsSubmitting(false);
+
         }
     };
 
@@ -95,6 +90,9 @@ export default function B2BRegistrationForm() {
                         </svg>
                         <h2>Thank you!</h2>
                         <p>We have received your request.</p>
+                           <Link href="/" className={styles.goHomeButton}>
+                                                     Go to Home
+                                                 </Link>
                     </div>
                 ) : (
                     <form onSubmit={handleSubmit} className={styles.form} noValidate>
@@ -154,7 +152,7 @@ export default function B2BRegistrationForm() {
                                         name="amount"
                                         type="number"
                                         step="10"
-                                         min="0"
+                                        min="0"
                                         value={formData.amount}
                                         onChange={handleChange}
                                         placeholder="e.g., 1000"
