@@ -26,8 +26,8 @@ export default function Page() {
                                             <Image
                                                 src={car.image}
                                                 alt={car.slug}
-                                                layout="fill"
-                                                objectFit="cover"
+                                                fill
+                                                style={{ objectFit: 'cover' }}
                                             />
                                         </div>
                                     </Link>

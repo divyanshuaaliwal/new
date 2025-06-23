@@ -179,7 +179,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 550px) {
   
     .accordionContainer {
         border-radius: 16px;

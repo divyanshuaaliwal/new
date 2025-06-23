@@ -70,7 +70,7 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 550px) {
     
     .sectionTitle, .internalPagesTitle {
         font-size: 2rem;

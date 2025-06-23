@@ -251,7 +251,6 @@
      box-shadow: 0 4px 8px rgba(224, 180, 136, 0.2);
     /* transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; */
     /* backdrop-filter: blur(6px); */
-    grid-row-start: 2;
 }
 
 .section:hover {
@@ -446,6 +445,11 @@
     }
 
     
+    .section {
+        grid-row-start: 2;
+    }
+
+    
 }
 
 @media (max-width: 550px) {
@@ -487,7 +491,6 @@
         width: 95%;
         height: 300px;
     }
-
 
 }
 

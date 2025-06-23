@@ -24,8 +24,8 @@ const Card = ({ place }) => {
                     <Image
                         src={image}
                         alt={name}
-                        layout="fill"
-                        objectFit="cover"
+                        fill
+                        style={{ objectFit: 'cover' }}
                     />
                 </div>
             </Link>

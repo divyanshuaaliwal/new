@@ -93,7 +93,7 @@
     }
 }
 /* Mobile: 1-column */
-@media (max-width: 480px) {
+@media (max-width: 550px) {
     .cards {
         grid-template-columns: 1fr;
     }

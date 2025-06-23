@@ -169,7 +169,7 @@ export default function UjjainDarshan() {
     loop
     autoPlay
     muted
-    playsInline="true"
+                    playsInline={true}
     preload="auto"
     controls={false}
     disablePictureInPicture
@@ -241,7 +241,7 @@ export default function UjjainDarshan() {
     loop
     autoPlay
     muted
-    playsInline="true"
+                    playsInline={true}
     preload="auto"
     controls={false}
     disablePictureInPicture
@@ -289,7 +289,7 @@ export default function UjjainDarshan() {
     loop
     autoPlay
     muted
-    playsInline="true"
+                    playsInline={true}
     preload="auto"
     controls={false}
     disablePictureInPicture

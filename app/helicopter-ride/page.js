@@ -13,7 +13,7 @@ const Page = () => {
     loop
     autoPlay
     muted
-    playsInline="true"
+                    playsInline={true}
     preload="auto"
     controls={false}
     disablePictureInPicture

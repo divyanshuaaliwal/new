@@ -44,7 +44,7 @@ export default function BhasmAarti() {
     loop
     autoPlay
     muted
-    playsInline="true"
+                    playsInline={true}
     preload="auto"
     controls={false}
     disablePictureInPicture
@@ -131,7 +131,7 @@ export default function BhasmAarti() {
     loop
     autoPlay
     muted
-    playsInline="true"
+                    playsInline={true}
     preload="auto"
     controls={false}
     disablePictureInPicture
@@ -154,7 +154,7 @@ export default function BhasmAarti() {
     loop
     autoPlay
     muted
-    playsInline="true"
+                    playsInline={true}
     preload="auto"
     controls={false}
     disablePictureInPicture

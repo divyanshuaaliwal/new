@@ -23,8 +23,8 @@ const PlacesNearUjjain = () => {
                                 <Image
                                     src={place.image}
                                     alt={place.name}
-                                    layout="fill"
-                                    objectFit="cover"
+                                    fill
+                                    style={{ objectFit: 'cover' }}
                                     className={styles.image}
                                 />
                                 <div className={styles.overlay}>

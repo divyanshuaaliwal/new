@@ -30,8 +30,8 @@ const Card = ({ taxi }) => {
                     <Image
                         src={gallary[0]}
                         alt={vehicle_type}
-                        layout="fill"
-                        objectFit="cover"
+                        fill
+                        style={{ objectFit: 'cover' }}
                     />
                 </div>
             </Link>
