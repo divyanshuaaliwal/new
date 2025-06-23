@@ -8,15 +8,16 @@
 .heroSection1 {
     position: relative;
     height: 72vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('./../assets/shivjee.jpg');
-
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), 
+                url('./../assets/shivjee.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     overflow: hidden;
-    object-fit: cover;
-
 }
 
 .heroOverlay {

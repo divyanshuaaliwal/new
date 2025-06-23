@@ -1,6 +1,4 @@
-// app/bhasm-aarti/page.js
 'use client';
-import { useEffect, useState, useRef } from 'react';
 import styles from './page.module.css';
 import { SectionHeader } from '../MainLayouts';
 import { Star, Info, } from 'lucide-react';
@@ -164,17 +162,17 @@ export default function UjjainDarshan() {
                     <div className={styles.heroGrid3}>
 
                         <div className={styles.videoWrapper}>
-                        <video
-    className={styles.videoElement}
-    src={v1}
-    loop
-    autoPlay
-    muted
-                    playsInline={true}
-    preload="auto"
-    controls={false}
-    disablePictureInPicture
-/>
+                            <video
+                                className={styles.videoElement}
+                                src={v1}
+                                loop
+                                autoPlay
+                                muted
+                                playsInline={true}
+                                preload="auto"
+                                controls={false}
+                                disablePictureInPicture
+                            />
 
                             <div className={styles.videoOverlay}></div>
                         </div>
@@ -182,7 +180,7 @@ export default function UjjainDarshan() {
 
 
                         <section className={styles.section}>
-                           <Info size={15} className={styles.icon} style={{ marginLeft: '-18px', verticalAlign: 'middle', color: ' #4b5563' }} />
+                            <Info size={15} className={styles.icon} style={{ marginLeft: '-18px', verticalAlign: 'middle', color: ' #4b5563' }} />
 
                             <span className={styles.listItem2Heading}>
                                 Ujjain, steeped in myth and sanctity, stands as a beacon of devotion where Lord Shiva is eternally worshipped in his fierce Mahakaleshwar form on the Shipra’s banks.
@@ -236,23 +234,23 @@ export default function UjjainDarshan() {
                     <div className={styles.heroGrid3}>
 
                         <div className={styles.videoWrapper}>
-                         <video
-    className={styles.videoElement}
-    src={spiritual_significance}
-    loop
-    autoPlay
-    muted
-                    playsInline={true}
-    preload="auto"
-    controls={false}
-    disablePictureInPicture
-/>
+                            <video
+                                className={styles.videoElement}
+                                src={spiritual_significance}
+                                loop
+                                autoPlay
+                                muted
+                                playsInline={true}
+                                preload="auto"
+                                controls={false}
+                                disablePictureInPicture
+                            />
 
                             <div className={styles.videoOverlay}></div>
                         </div>
 
                         <section className={styles.section}>
-                           <Info size={15} className={styles.icon} style={{ marginLeft: '-18px', verticalAlign: 'middle', color: ' #4b5563' }} />
+                            <Info size={15} className={styles.icon} style={{ marginLeft: '-18px', verticalAlign: 'middle', color: ' #4b5563' }} />
 
                             <span className={styles.listItem2Heading}>
                                 As one of the Sapta Puri and the site of the Kumbh Mela, Ujjain holds unmatched religious importance, symbolizing cosmic balance and spiritual awakening.
@@ -269,12 +267,12 @@ export default function UjjainDarshan() {
                     <SectionHeader title="Practical Tips" />
 
                     <div className={styles.heroGrid2}>
-                      
+
                         <section className={styles.section}>
-                             <Info size={15} className={styles.icon} style={{ marginLeft: '-18px', verticalAlign: 'middle', color: ' #4b5563' }} />
-                        <span className={styles.listItem2Heading}>
-                            Plan ahead by booking early, dressing traditionally, carrying minimal belongings, and preparing for a deeply moving but early-morning experience at the temple.
-                        </span>
+                            <Info size={15} className={styles.icon} style={{ marginLeft: '-18px', verticalAlign: 'middle', color: ' #4b5563' }} />
+                            <span className={styles.listItem2Heading}>
+                                Plan ahead by booking early, dressing traditionally, carrying minimal belongings, and preparing for a deeply moving but early-morning experience at the temple.
+                            </span>
                             {
                                 getListWithoutLines(ujjainDarshan.practicalTips)
                             }
@@ -287,7 +285,7 @@ export default function UjjainDarshan() {
                                 loop
                                 autoPlay
                                 muted
-                                                playsInline={true}
+                                playsInline={true}
                                 preload="auto"
                                 controls={false}
                                 disablePictureInPicture

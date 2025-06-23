@@ -9,16 +9,15 @@
     position: relative;
     height: 72vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('./../assets/omkareshwarShivjee.jpg');
-
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     overflow: hidden;
-    object-fit: cover;
-
 }
-
 .heroOverlay {
     background: linear-gradient(145deg, rgba(255, 153, 51, 0.2), rgba(255, 94, 0, 0.15));
     backdrop-filter: blur(10px);
