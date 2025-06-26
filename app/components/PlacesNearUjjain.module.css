@@ -1,11 +1,11 @@
-
 .cardGrid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
     padding: 20px;
+    justify-content: center;   place-items: center;
 }
+
 
 .circleCard {
     width: 160px;
@@ -91,8 +91,10 @@
 @media (max-width: 550px) {
     
     .cardGrid {
-        gap: 40px;
+        /* gap: 40px; */
+        grid-template-columns: 1fr 1fr;
     }
+    
 
     .circleCard {
         width: 100px;

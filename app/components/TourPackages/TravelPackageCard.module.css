@@ -192,7 +192,7 @@
 
 @media (max-width: 950px) {
     .packageTitle {
-        -webkit-line-clamp: 1;
+        -webkit-line-clamp: 2;
     }
 }
 
@@ -200,7 +200,7 @@
 @media (max-width: 550px) {
 
      .packageTitle {
-        -webkit-line-clamp: 2;
+        -webkit-line-clamp: 3;
     }
 
     

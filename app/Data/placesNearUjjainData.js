@@ -1,11 +1,11 @@
-import Indore from '../assets/Indore.png';
-import Omkareshwar from '../assets/omkareshwar.png';
-import Mandu from '../assets/Mandu.png';
-import KalkaMata from '../assets/KalkaMata.png';
-import Sandipani from '../assets/Sandipani.png';
-import Chintaman from '../assets/Chintaman.png';
-import Maheshwar from '../assets/Maheshwar.png';
-import Bhopal from '../assets/Bhopal.png';
+const Indore = 'https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/placesNearUjjain/Indore.webp';
+const Omkareshwar = 'https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/placesNearUjjain/omkareshwar.webp';
+const Mandu = 'https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/placesNearUjjain/Mandu.webp';
+const KalkaMata = 'https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/placesNearUjjain/KalkaMata.webp';
+const Sandipani = 'https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/placesNearUjjain/Sandipani.webp';
+const Chintaman = 'https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/placesNearUjjain/Chintaman.webp';
+const Maheshwar = 'https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/placesNearUjjain/Maheshwar.webp';
+const Bhopal = 'https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/placesNearUjjain/Bhopal.webp';
 
 export const placesNearUjjain = [
     {

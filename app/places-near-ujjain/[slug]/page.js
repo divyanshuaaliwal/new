@@ -14,7 +14,7 @@ export default function HelicopterTourPage() {
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [activeTab, setActiveTab] = useState(null);
-    const tabs = ['activities', 'famous_food', 'festivals', 'accommodation', 'nearby_attractions'];
+    const tabs = ['activities', 'famous_food', 'festivals', 'accommodation', 'attractions'];
     
     const { getSubtitle, getObjectDataListOrArrayDataList } = useInternalPageContext();
 

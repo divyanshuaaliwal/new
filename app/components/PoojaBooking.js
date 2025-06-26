@@ -10,8 +10,8 @@ import TwoButtons from '../components/TwoButtons';
 const PujaCard = ({ puja }) => {
     return (
         <div className={styles.card}>
-            <Link href={`pooja-booking/${puja.slug}`}>
-                <Image src={puja.image} alt={puja.title} className={styles.image} />
+            <Link href={`pooja-booking/${puja.slug}`} className={styles.imgContainer}>
+                <Image src={puja.image} alt={puja.title} fill className={styles.image} />
              </Link>
             <div className={styles.content}>
                 <h3 className={styles.title}>{puja.title}</h3>

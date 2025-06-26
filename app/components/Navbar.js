@@ -4,10 +4,10 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Phone, Mail, ChevronDown, Menu, X } from "lucide-react";
-import shivji from "../assets/shiv.avif";
-import temple from "../assets/temple.jpg";
-import phnLogo from "../assets/logoPhone.png";
-import lapLogo from "../assets/logoLaptop.png";
+import lordShiva from "../assets/lordShiva.gif";
+import phnLogo from "../assets/phnLogo.png";
+import lapLogo from "../assets/lapLogo.png";
+import stamp from "../assets/stamp.png";
 import Damroo from "../assets/Damroo.png";
 import omGif from "../assets/omGif.gif";
 import trishulGif from "../assets/trishulGif.gif";
@@ -23,7 +23,7 @@ export default function Navbar() {
     const [activeDropdown, setActiveDropdown] = useState(null);
     const [activeInnerDropdown, setActiveInnerDropdown] = useState(null);
     const [menuOpen, setMenuOpen] = useState(false);
-    
+
     const isMobile = useMediaQuery("(max-width:1275px)");
 
     const [expandedItems, setExpandedItems] = useState({});
@@ -71,11 +71,17 @@ export default function Navbar() {
                 {
                     isMobile && (
                         <div className={styles.mobileMenuToggle}>
-                           
-                            <div className={styles.mobileLogoContainer}>      
-                                <Image src={phnLogo} width={200} height={200} alt="Logo" />
+
+                            <div className={styles.mobileLogoContainer}>
+                               <Image
+                    src={phnLogo}
+                    alt="Logo"
+                    width={150}
+                    height={30}
+                    style={{ marginLeft:"10px" }}
+                    />
                             </div>
-                            
+
                             <button
                                 className={styles.hamburgerButton}
                                 onClick={() => setMenuOpen(!menuOpen)}
@@ -192,18 +198,22 @@ export default function Navbar() {
                             {/* Middle Part */}
                             <div className={styles.logoSection}>
                                 <div className={styles.logoLeft}>
-                                  <div>
-  <Image src={lapLogo} width={70} height={60} alt="Logo" />
-</div>
-
                                     <div>
+                                        <Image src={lapLogo} height={60} alt="Logo" />
+                                    </div>
+                                    <div className={styles.stampSection}>
+                                        <Image src={stamp} height={60} alt="Stamp" />
+                                        <div className={styles.approved}>
                                         <div className={styles.approvedText}>Approved by</div>
                                         <div className={styles.approvedBy}>Madhya Pradesh Tourism</div>
                                     </div>
+                                    </div>
+
+                                    
                                 </div>
 
                                 <div className={styles.middleAssets}>
-                                  
+
                                     <Image
                                         src={trishulGif}
                                         alt="Description of GIF"
@@ -213,19 +223,13 @@ export default function Navbar() {
                                     />
 
                                     <Image
-                                        src={shivji}
-                                        alt="Shiva"
+                                        src={lordShiva}
+                                        alt="Description of GIF"
                                         width={70}
                                         height={70}
-                                        className={`${styles.image11} ${styles.image1}`}
+                                        unoptimized // Add this for GIFs to prevent optimization
                                     />
-                                    <Image
-                                        src={temple}
-                                        alt="Temple"
-                                        width={70}
-                                        height={70}
-                                        className={`${styles.image11} ${styles.image2}`}
-                                    />
+    
 
                                     <Image
                                         src={bellsGif}
@@ -234,7 +238,7 @@ export default function Navbar() {
                                         height={70}
                                         unoptimized // Add this for GIFs to prevent optimization
                                     />
-                                   
+
                                     <Image
                                         src={Damroo}
                                         alt="Damroo"
@@ -255,7 +259,7 @@ export default function Navbar() {
                                 </div>
 
                                 <div className={styles.contactRight}>
-                                   
+
                                     <div className={styles.contactItem}>
 
                                         <div className={styles.animatedBorderBox}>
@@ -263,7 +267,7 @@ export default function Navbar() {
                                             <Phone size={16} />
                                             <a className={styles.number} href="tel:+919111452099">+91 9111452099</a>
                                         </div>
-                                           <WhatsAppButton2 />
+                                        <WhatsAppButton2 />
 
                                     </div>
                                     <div className={styles.contactItem2}>
@@ -388,8 +392,8 @@ export default function Navbar() {
                             <div className={styles.mobileSidebarContent}>
 
                                 <div className={styles.mobileMenuHeader}>
-                        
-                                    <Image src={phnLogo} width={40} height={40} alt="Logo" />
+
+                                   <h2>Main Menu</h2>
 
                                     <button onClick={closeMobileMenu} className={styles.closeButton}>
                                         <X size={24} />
@@ -400,7 +404,6 @@ export default function Navbar() {
 
                                     {/* Main Menu */}
                                     <div className={styles.mobileSection}>
-                                        <h3>Main Menu</h3>
                                         {
                                             menuLinks.map((item, index) => (
                                                 <div key={index} className={styles.mobileNavItem}>

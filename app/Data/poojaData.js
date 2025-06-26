@@ -1,29 +1,29 @@
-import puja1 from "../assets/puja1.jpeg";
-import puja2 from "../assets/puja2.jpeg";
-import puja3 from "../assets/puja3.jpeg";
-import puja4 from "../assets/puja4.jpeg";
-import puja5 from "../assets/puja5.webp";
-import puja6 from "../assets/puja6.jpeg";
-import puja7 from "../assets/puja7.jpg";
-import puja8 from "../assets/puja8.jpeg";
-import puja9 from "../assets/puja9.jpeg";
-import puja10 from "../assets/puja10.jpeg";
-import puja11 from "../assets/puja11.jpeg";
-import puja12 from "../assets/puja12.jpg";
-import puja13 from "../assets/puja13.jpeg";
-import puja14 from "../assets/puja14.jpeg";
-import puja15 from "../assets/puja1.jpeg";
-import puja16 from "../assets/puja2.jpeg";
-import puja17 from "../assets/puja3.jpeg";
-import puja18 from "../assets/puja4.jpeg";
-import puja19 from "../assets/puja5.webp";
-import puja20 from "../assets/puja6.jpeg";
-import puja21 from "../assets/puja7.jpg";
-import puja22 from "../assets/puja8.jpeg";
-import puja23 from "../assets/puja9.jpeg";
-import puja24 from "../assets/puja10.jpeg";
-import puja25 from "../assets/puja11.jpeg";
-import puja26 from "../assets/puja12.jpg";
+const mangalDoshNivaran =  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Poojas/mangalDoshNivaran.webp";
+const kaalSarpDoshNivaran =  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Poojas/kaalSarpDoshNivaran.webp";
+const pitraDoshNivaran =  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Poojas/pitraDoshNivaran.webp";
+const nadiDoshNivaran =  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Poojas/nadiDoshNivaran.webp";
+const shaniShantiPooja =  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Poojas/shaniShantiPooja.webp";
+const rahuShantiPooja =  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Poojas/rahuShantiPooja.webp";
+const ketuShantiPooja =  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Poojas/ketuShantiPooja.webp";
+const grahDoshNivaran =  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Poojas/grahDoshNivaran.webp";
+const chandraShantiPooja =  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Poojas/chandraShantiPooja.webp";
+const budhGrahShanti =  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Poojas/budhGrahShanti.webp";
+const guruGrahShanti =  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Poojas/guruGrahShanti.webp";
+const suryaShantiPooja =  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Poojas/suryaShantiPooja.webp";
+const chandalDoshNivaraPooja =  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Poojas/chandalDoshNivaraPooja.webp";
+const navgrahShantiPooja =  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Poojas/navgrahShantiPooja.webp";
+const rudrabhishekPuja =  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Poojas/rudrabhishekPuja.webp";
+const mahaMrityunjayJaap =  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Poojas/mahaMrityunjayJaap.webp";
+const laghuRudraPooja =  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Poojas/laghuRudraPooja.webp";
+const mahaRudraPuja =  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Poojas/mahaRudraPuja.webp";
+const narayanNagbaliPuja =  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Poojas/narayanNagbaliPuja.webp";
+const tripindiShraddh =  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Poojas/tripindiShraddh.webp";
+const ganapatyHomam =  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Poojas/ganapatyHomam.webp";
+const durgaSaptshatiPuja =  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Poojas/durgaSaptshatiPuja.webp";
+const vishnuSahasranamPath =  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Poojas/vishnuSahasranamPath.webp";
+const adityaHrudayamStotra =  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Poojas/adityaHrudayamStotra.webp";
+const Tailabhishekam =  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Poojas/Tailabhishekam.webp";
+const hanumanChalisaPath =  "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Poojas/hanumanChalisaPath.webp";
 
 export const pujaData = [
     {
@@ -31,7 +31,7 @@ export const pujaData = [
         title: "Mangal Dosh Nivaran Pooja",
         subtitle: "To mitigate the malefic effects of Mars in the birth chart",
         slug: "mangal-dosh-nivaran-pooja-0",
-        image: puja1,
+        image: mangalDoshNivaran,
         location: "Mangalnath Temple, Ujjain",
         description: "This remedial puja neutralizes the negative influence of Mangal (Mars) in the horoscope, which can cause marital discord, aggression, and delays in success. Performed with Vedic mantras to restore balance.",
         duration: "4 hours",
@@ -82,7 +82,7 @@ export const pujaData = [
         title: "Kaal Sarp Dosh Nivaran",
         subtitle: "To remove obstacles caused by Kaal Sarp Yoga",
         slug: "kaal-sarp-dosh-nivaran-1",
-        image: puja2,
+        image: kaalSarpDoshNivaran,
         location: "Rahu Temple, Paithani, Uttarakhand",
         description: "This puja pacifies the effects of Kaal Sarp Yoga, a planetary alignment causing delays, struggles, and misfortunes. It invokes Naga deities to clear karmic blockages.",
         duration: "11 hours",
@@ -133,7 +133,7 @@ export const pujaData = [
         title: "Pitra Dosh Nivaran",
         subtitle: "To appease ancestors and remove ancestral curses",
         slug: "pitra-dosh-nivaran-2",
-        image: puja3,
+        image: pitraDoshNivaran,
         location: "Gaya, Bihar",
         description: "This ritual addresses Pitra Dosha, caused by ancestral dissatisfaction, leading to family disputes, financial losses, and health issues. It honors ancestors through Vedic offerings.",
         duration: "6 hours",
@@ -184,7 +184,7 @@ export const pujaData = [
         title: "Naadi Dosh Nivaran",
         subtitle: "To resolve compatibility issues in marriage",
         slug: "naadi-dosh-nivaran-3",
-        image: puja4,
+        image: nadiDoshNivaran,
         location: "Shakti Peeth, Ujjain",
         description: "This puja mitigates Naadi Dosha in horoscope matching, which can cause health issues, infertility, or marital discord. It invokes divine blessings for harmony.",
         duration: "4 hours",
@@ -235,7 +235,7 @@ export const pujaData = [
         title: "Shani Shanti Pooja",
         subtitle: "To pacify the effects of Saturn’s influence",
         slug: "shani-shanti-pooja-4",
-        image: puja5,
+        image: shaniShantiPooja,
         location: "Shani Temple, Nashik",
         description: "This puja neutralizes the malefic effects of Shani (Saturn), which can cause delays, hardships, and health issues. It invokes Lord Shani for blessings of discipline and success.",
         duration: "5 hours",
@@ -286,7 +286,7 @@ export const pujaData = [
         title: "Rahu Shanti Pooja",
         subtitle: "To mitigate the malefic effects of Rahu",
         slug: "rahu-shanti-pooja-5",
-        image: puja6,
+        image: rahuShantiPooja,
         location: "Rahu Temple, Paithani, Uttarakhand",
         description: "This puja pacifies Rahu’s shadow influence, which causes confusion, addiction, and sudden setbacks. It aligns Rahu’s energy for success and intuition.",
         duration: "6 hours",
@@ -337,7 +337,7 @@ export const pujaData = [
         title: "Ketu Shanti Pooja",
         subtitle: "To neutralize Ketu’s malefic effects",
         slug: "ketu-shanti-pooja-6",
-        image: puja7,
+        image: ketuShantiPooja,
         location: "Ketu Temple, Paithani, Uttarakhand",
         description: "This ritual mitigates Ketu’s influence, which can cause spiritual confusion, detachment, and health issues. It invokes Ketu’s blessings for spiritual growth and clarity.",
         duration: "6 hours",
@@ -388,7 +388,7 @@ export const pujaData = [
         title: "Grah Dosh Nivaran",
         subtitle: "To balance all planetary influences",
         slug: "grah-dosh-nivaran-7",
-        image: puja8,
+        image: grahDoshNivaran,
         location: "Navagraha Temple, Ujjain",
         description: "This comprehensive puja pacifies all nine planets to remove doshas causing obstacles in life. It ensures harmony and success across all areas.",
         duration: "8 hours",
@@ -439,7 +439,7 @@ export const pujaData = [
         title: "Chandra Shanti Pooja",
         subtitle: "To pacify the Moon’s malefic effects",
         slug: "chandra-shanti-pooja-8",
-        image: puja9,
+        image: chandraShantiPooja,
         location: "Chandra Temple, Varanasi",
         description: "This puja mitigates the Moon’s negative influence, which causes emotional instability and mental unrest. It invokes Chandra Dev for peace and clarity.",
         duration: "4 hours",
@@ -490,7 +490,7 @@ export const pujaData = [
         title: "Budh Graha Shanti",
         subtitle: "To pacify Mercury’s malefic effects",
         slug: "budh-graha-shanti-9",
-        image: puja10,
+        image: budhGrahShanti,
         location: "Budh Temple, Haridwar",
         description: "This puja neutralizes Mercury’s negative influence, which affects communication, intellect, and business. It invokes Budh Dev for clarity and success.",
         duration: "4 hours",
@@ -541,7 +541,7 @@ export const pujaData = [
         title: "Guru Graha Shanti",
         subtitle: "To pacify Jupiter’s malefic effects",
         slug: "guru-graha-shanti-10",
-        image: puja11,
+        image: guruGrahShanti,
         location: "Guru Brihaspati Temple, Varanasi",
         description: "This puja mitigates Jupiter’s negative influence, which can cause financial losses and lack of wisdom. It invokes Guru Dev for prosperity and knowledge.",
         duration: "4 hours",
@@ -592,7 +592,7 @@ export const pujaData = [
         title: "Surya Shanti Pooja",
         subtitle: "To pacify the Sun’s malefic effects",
         slug: "surya-shanti-pooja-11",
-        image: puja12,
+        image: suryaShantiPooja,
         location: "Surya Temple, Konark",
         description: "This puja neutralizes the Sun’s negative influence, which affects authority, health, and vitality. It invokes Surya Dev for confidence and success.",
         duration: "4 hours",
@@ -643,7 +643,7 @@ export const pujaData = [
         title: "Chandal Dosh Nivaran Pooja",
         subtitle: "To mitigate the malefic effects of Guru-Chandal Yoga",
         slug: "Chandal-dosh-nivaran-pooja-12",
-        image: puja13,
+        image: chandalDoshNivaraPooja,
         location: "Mahakaleshwar Temple, Ujjain",
         description: "This remedial puja addresses the Guru-Chandal Yoga, formed by the conjunction of Jupiter (Guru) and Rahu/Ketu, which can cause financial losses, poor decision-making, and spiritual confusion. Performed with Vedic rituals to restore Jupiter’s benefic influence and neutralize Rahu/Ketu’s malefic effects.",
         duration: "5 hours",
@@ -694,7 +694,7 @@ export const pujaData = [
         title: "Navagraha Shanti Pooja",
         subtitle: "To balance all nine planetary influences",
         slug: "navagraha-shanti-pooja-13",
-        image: puja14,
+        image: navgrahShantiPooja,
         location: "Navagraha Temple, Ujjain",
         description: "This comprehensive ritual pacifies all nine planets to remove doshas and ensure success, health, and prosperity in all life aspects.",
         duration: "9 hours",
@@ -740,13 +740,12 @@ export const pujaData = [
         priest_qualification: "Jyotish scholars with Vedic expertise",
         environmental_impact: "Eco-friendly materials used"
     },
-
     {
         id: 15,
         title: "Rudrabhishek Pooja",
         subtitle: "For divine blessings, health, and obstacle removal",
         slug: "rudrabhishek-pooja-14",
-        image: puja15,
+        image: rudrabhishekPuja,
         location: "Mahakaleshwar Temple, Ujjain",
         description: "The Rudrabhishek Pooja is a sacred Vedic ritual involving the ceremonial bathing (abhishekam) of the Shiva Lingam with offerings like milk, curd, and honey, accompanied by the chanting of Rudra mantras. It invokes Lord Shiva’s blessings for health, prosperity, and removal of obstacles.",
         duration: "4 hours",
@@ -797,7 +796,7 @@ export const pujaData = [
         title: "Maha Mrityunjaya Jaap",
         subtitle: "For health, longevity, and protection from untimely death",
         slug: "maha-mrityunjaya-jaap-15",
-        image: puja16,
+        image: mahaMrityunjayJaap,
         location: "Mahakaleshwar Temple, Ujjain",
         description: "This powerful Vedic chant invokes Lord Shiva to grant health, longevity, and protection from life-threatening situations through mantra recitation.",
         duration: "6 hours",
@@ -848,7 +847,7 @@ export const pujaData = [
         title: "Laghu Rudra Pooja",
         subtitle: "For divine blessings and obstacle removal",
         slug: "laghu-rudra-pooja-16",
-        image: puja17,
+        image: laghuRudraPooja,
         location: "Mahakaleshwar Temple, Ujjain",
         description: "This simplified Rudra puja invokes Lord Shiva to remove obstacles and grant divine blessings for success and spiritual growth.",
         duration: "4 hours",
@@ -899,7 +898,7 @@ export const pujaData = [
         title: "Maha Rudra Yagya",
         subtitle: "For supreme blessings and liberation",
         slug: "maha-rudra-yagya-17",
-        image: puja18,
+        image: mahaRudraPuja,
         location: "Mahakaleshwar Temple, Ujjain",
         description: "This grand fire ceremony invokes Lord Shiva’s supreme form to grant liberation, remove karmic obstacles, and bestow divine blessings.",
         duration: "12 hours",
@@ -950,7 +949,7 @@ export const pujaData = [
         title: "Narayan Nagbali Pooja",
         subtitle: "To appease ancestors and serpent deities",
         slug: "arayan-nagbali-pooja-18",
-        image: puja19,
+        image: narayanNagbaliPuja,
         location: "Trimbakeshwar Temple, Nashik",
         description: "This dual ritual addresses ancestral curses (Narayan Bali) and serpent-related doshas (Nagbali), resolving issues like infertility and family disputes.",
         duration: "7 hours",
@@ -1001,7 +1000,7 @@ export const pujaData = [
         title: "Tripindi Shraddha",
         subtitle: "To honor ancestors across three generations",
         slug: "tripindi-shraddha-19",
-        image: puja20,
+        image: tripindiShraddh,
         location: "Gaya, Bihar",
         description: "This ritual appeases ancestors across three generations, resolving Pitra Dosha and bringing peace, prosperity, and ancestral blessings.",
         duration: "5 hours",
@@ -1052,7 +1051,7 @@ export const pujaData = [
         title: "Ganpati Homam",
         subtitle: "For success and obstacle removal",
         slug: "ganpati-homam-20",
-        image: puja21,
+        image: ganapatyHomam,
         location: "Siddhivinayak Temple, Mumbai",
         description: "This fire ceremony invokes Lord Ganesha to remove obstacles and ensure success in new ventures, education, and personal endeavors.",
         duration: "4 hours",
@@ -1103,7 +1102,7 @@ export const pujaData = [
         title: "Durga Saptashati Path",
         subtitle: "For protection and victory over obstacles",
         slug: "durga-saptashati-path-21",
-        image: puja22,
+        image: durgaSaptshatiPuja,
         location: "Maa Baglamukhi Dham, Ujjain",
         description: "This recitation of the Durga Saptashati invokes Goddess Durga’s power to remove obstacles, protect from enemies, and grant victory in challenges.",
         duration: "5 hours",
@@ -1154,7 +1153,7 @@ export const pujaData = [
         title: "Vishnu Sahasranam Path",
         subtitle: "For divine blessings and prosperity",
         slug: "vishnu-sahasranam-pooja-22",
-        image: puja23,
+        image: vishnuSahasranamPath,
         location: "Vishnu Temple, Tirupati",
         description: "This recitation of Vishnu’s thousand names invokes Lord Vishnu’s blessings for wealth, protection, and spiritual growth.",
         duration: "4 hours",
@@ -1205,7 +1204,7 @@ export const pujaData = [
         title: "Aditya Hriday Stotra",
         subtitle: "For vitality, success, and Sun’s blessings",
         slug: "aditya-hriday-stotra-23",
-        image: puja24,
+        image: adityaHrudayamStotra,
         location: "Surya Temple, Konark",
         description: "This recitation of the Aditya Hriday Stotra invokes Lord Surya for vitality, success, and confidence, as per the Ramayana.",
         duration: "3 hours",
@@ -1256,7 +1255,7 @@ export const pujaData = [
         title: "Tail Abhishekam",
         subtitle: "For health and planetary pacification",
         slug: "tail-abhishek-24",
-        image: puja25,
+        image: Tailabhishekam,
         location: "Shani Temple, Nashik",
         description: "This ritual involves offering mustard oil to Lord Shani or other deities to pacify planetary influences and promote health and stability.",
         duration: "3 hours",
@@ -1307,7 +1306,7 @@ export const pujaData = [
         title: "Hanuman Chalisa Path",
         subtitle: "For strength, protection, and courage",
         slug: "hanuman-chalisa-25",
-        image: puja26,
+        image: hanumanChalisaPath,
         location: "Hanuman Temple, Varanasi",
         description: "This recitation of the Hanuman Chalisa invokes Lord Hanuman’s blessings for strength, protection from negativity, and courage to face challenges.",
         duration: "3 hours",

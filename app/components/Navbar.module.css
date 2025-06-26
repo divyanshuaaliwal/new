@@ -62,10 +62,18 @@
   }
 }
 
+.stampSection {
+    display: flex;
+    align-items: center;
+}
+
+.approved {
+    font-family: sans-serif;
+}
 
 .approvedText {
     color: gray;
-    font-weight: 600;
+    font-weight: bold;
     margin: 0;
 }
 
@@ -179,18 +187,9 @@
 }
 
 .mobileLogoContainer {
-    /* padding: 1rem 1.5rem; */
-    cursor: pointer;
-    background-color: transparent;
-    color: white;
-    border: none;
-    font-size: 1rem;
     display: flex;
     align-items: center;
-    /* justify-content: sr; */
-    z-index: 1001;
-    position: relative;
-    overflow: hidden;
+    justify-content: center;
 }
 
 .hamburgerButton {
@@ -257,14 +256,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.5rem 1rem 10px;
     background-color: #e46e0f;
     color: white;
 }
 
-.mobileMenuHeader h2 {
+.mobileMenuHeader h3 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .closeButton {
@@ -279,7 +278,7 @@
 }
 
 .mobileNav {
-    padding: 1rem;
+    padding: 0 1rem ;
     flex: 1;
     overflow-y: auto;
 }

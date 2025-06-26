@@ -28,6 +28,7 @@ const ThingsToDoInUjjain = () => {
                                     <div className={styles.imageContainer}>
                                         <Image
                                             src={attraction.image}
+                                            fill
                                             alt={attraction.name}
                                             className={styles.attractionImage} />
                                     </div>

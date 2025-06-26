@@ -1,9 +1,9 @@
-import Mahakaleshwar_temple from "../assets/Mahakaleshwar_temple.png";
-import RamGhat from "../assets/Ram_Ghat.png";
-import KalBhairav from "../assets/Kal_Bhairav_Temple.png";
-import JantarMantar from "../assets/Jantar_Mantar.png";
-import MangalnathTemple from "../assets/Mangalnath_Temple.png";
-import kalideh from "../assets/kalideh.png";
+const Mahakaleshwar_temple = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/thingsToDo/Mahakaleshwar_temple.webp";
+const RamGhat = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/thingsToDo/Ram_Ghat.webp";
+const KalBhairav = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/thingsToDo/Kal_Bhairav_Temple.webp";
+const JantarMantar = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/thingsToDo/Jantar_Mantar.webp";
+const MangalnathTemple = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/thingsToDo/Mangalnath_Temple.webp";
+const kalideh = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/thingsToDo/kalideh.webp";
 
 export const attractions = [
     {
@@ -11,7 +11,7 @@ export const attractions = [
         name: 'Mahakaleshwar Temple',
         slug: 'mahakaleshwar-temple-0',  
         description: 'One of the 12 Jyotirlingas in India, dedicated to Lord Shiva',
-        detailedDescription: 'The Mahakaleshwar Temple is one of the most revered Shiva temples in India, housing one of the twelve Jyotirlingas. The temple is known for its unique Bhasma Aarti performed with sacred ash. The presiding deity, Lord Shiva in the lingam form is believed to be Swayambhu (self-manifested) and derives currents of power (Shakti) from within itself.',
+        detailedDescription: 'The Mahakaleshwar Temple is one of the most revered Shiva temples in India, housing one of the twelve Jyotirlingas. The temple is known for its unique Bhasma Aarti performed with sacred ash. The presiding deity, Lord Shiva in the lingam form is believed to be Swayambhu (self-manifested) and derives currents of power (Shakti) = within itself.',
         image: Mahakaleshwar_temple,
         location: 'Jaisinghpura, Ujjain',
         timings: '4:00 AM - 11:00 PM',
@@ -96,7 +96,7 @@ export const attractions = [
                 description: 'Evening prayer ceremony with lamps and chants',
                 ticketRequired: false,
                 duration: '45 minutes',
-                bestViewingSpots: 'Main platform or from boats'
+                bestViewingSpots: 'Main platform or = boats'
             },
             {
                 name: 'Kumbh Mela',
@@ -286,7 +286,7 @@ export const attractions = [
         name: 'Mangalnath Temple',
         slug: "mangalnath-temple-4",  
         description: 'Temple dedicated to Mars (Mangal), considered the birthplace of Mars',
-        detailedDescription: 'Mangalnath Temple is a unique astrological temple dedicated to Mars (Mangal in Hindi). According to Hindu mythology, this spot is considered the birthplace of Mars. The temple is particularly significant for those suffering from \'Mangal Dosha\' in their horoscopes. Located on the banks of the Shipra River, the temple offers peaceful surroundings and is an important site for astrological remedies.',
+        detailedDescription: 'Mangalnath Temple is a unique astrological temple dedicated to Mars (Mangal in Hindi). According to Hindu mythology, this spot is considered the birthplace of Mars. The temple is particularly significant for those suffering = \'Mangal Dosha\' in their horoscopes. Located on the banks of the Shipra River, the temple offers peaceful surroundings and is an important site for astrological remedies.',
         image: MangalnathTemple,
         location: 'Mangalnath Road, Ujjain',
         timings: '6:00 AM - 9:00 PM',
@@ -324,7 +324,7 @@ export const attractions = [
         facilities: ['Astrology Consultation (fees vary)', 'Prasad Counter', 'Parking', 'Information Desk', 'Meditation Area'],
         rules: ['Maintain Silence', 'No Photography Inside sanctum', 'Remove Footwear', 'Follow Priest Instructions'],
         history: 'Ancient temple mentioned in Hindu scriptures. The current structure was renovated in the 19th century. Ujjain has been an important center for astronomy and astrology since ancient times, and this temple is part of that tradition.',
-        significance: 'First temple dedicated to Mars globally. Believed to remove \'Mangal Dosha\' (astrological affliction caused by Mars) from horoscopes. The temple is located at what ancient astronomers considered as the exact point where Mars was born.',
+        significance: 'First temple dedicated to Mars globally. Believed to remove \'Mangal Dosha\' (astrological affliction caused by Mars) = horoscopes. The temple is located at what ancient astronomers considered as the exact point where Mars was born.',
         architecture: 'Simple yet elegant structure with Mars symbol prominently displayed. The temple has a small sanctum with the Mars deity and a larger hall for rituals.',
         crowd: {
             peakHours: 'Tuesday all day, 7:00 AM - 10:00 AM daily',
@@ -375,7 +375,7 @@ export const attractions = [
             {
                 name: 'Photography Workshop',
                 time: 'First Sunday of every month',
-                description: 'Learn palace photography techniques from experts',
+                description: 'Learn palace photography techniques = experts',
                 ticketRequired: true,
                 ticketPrice: '₹200',
                 equipment: 'Bring your own camera'

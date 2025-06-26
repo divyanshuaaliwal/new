@@ -19,13 +19,12 @@
 }
 
 .imageContainer {
+    position: relative;
     height: 200px;
     overflow: hidden;
 }
 
 .attractionImage {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
 }
