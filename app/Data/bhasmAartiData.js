@@ -1,9 +1,15 @@
+const v1 = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/bhasmAarti.mp4";
+const v2 = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/cultural_impact.mp4";
+const v3 ="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/ujjainlast.mp4";
 
-import bhasmAartiImageUjjain from "../assets/bhasmAartiImageUjjain.png";
-import historical_significanceImage from "../assets/historical_significance.png";
-import procedureImage from "../assets/procedure.png";
+
 export const bhasmAarti = {
 
+    
+    video1: v1,
+    video2: v2,
+    video3: v3,
+    
     title: "Bhasma Aarti at Mahakaleshwar Temple, Ujjain",
 
     theSoulOfMahakal: [
@@ -41,16 +47,15 @@ export const bhasmAarti = {
         "A popular legend says a demon named Dushan terrorized Ujjain until Shiva destroyed him and stayed in Ujjain as Mahakal.",
         "The Aarti is believed to celebrate Shiva’s victory over evil and symbolize the destruction of ego and ignorance."
     ],
-procedure: [
-    "Ritual starts before dawn, lasts ~2 hours.",
-    "Abhishek with water, milk, curd, honey, sandalwood.",
-    "Lingam adorned with flowers, bilva leaves, and cloth.",
-    "Priest swings sacred ash over the Lingam.",
-    "Chants, bells, and damru fill the air.",
-    "Devotees feel a strong spiritual aura."
-]
 
-,
+    procedure: [
+        "Ritual starts before dawn, lasts ~2 hours.",
+        "Abhishek with water, milk, curd, honey, sandalwood.",
+        "Lingam adorned with flowers, bilva leaves, and cloth.",
+        "Priest swings sacred ash over the Lingam.",
+        "Chants, bells, and damru fill the air.",
+        "Devotees feel a strong spiritual aura."
+    ],
 
     spiritual_significance: [
         "The Bhasma Aarti represents Sanatan Dharma’s core values and Lord Shiva’s divine essence.",
@@ -78,14 +83,14 @@ procedure: [
     ],
 
 
- timing: {
-    aartiStart: "4:00 AM",
-    reportingTime: "2:00 AM",
-    duration: "1.5 hours",
-    brahmaMuhurat: "Approximately 3:30 AM to 5:30 AM",
-    gateOpeningTime: "1:30 AM",
-    idealArrivalTime: "Between 1:45 AM and 2:00 AM"
-},
+    timing: {
+        aartiStart: "4:00 AM",
+        reportingTime: "2:00 AM",
+        duration: "1.5 hours",
+        brahmaMuhurat: "Approximately 3:30 AM to 5:30 AM",
+        gateOpeningTime: "1:30 AM",
+        idealArrivalTime: "Between 1:45 AM and 2:00 AM"
+    },
 
 
     location: {
@@ -111,41 +116,30 @@ procedure: [
         male: "Dhoti and Angavastram",
         female: "Saree or Salwar Kameez (no Western attire)"
     },
-guidelines :[
-    "Advance booking is mandatory via the official website.",
-    "Mobile phones and cameras are prohibited inside the temple.",
-    "Follow traditional Indian dress code strictly.",
-    "Report at the temple gate by 2:00 AM for security check-in.",
-    "Women are not allowed in the inner sanctum during the Aarti.",
-    "Carry a valid government-issued ID for verification.",
-    "Maintain silence and decorum during the entire ritual.",
-    "Do not carry any food or drinks inside the temple premises.",
-],
+
+    guidelines :[
+        "Advance booking is mandatory via the official website.",
+        "Mobile phones and cameras are prohibited inside the temple.",
+        "Follow traditional Indian dress code strictly.",
+        "Report at the temple gate by 2:00 AM for security check-in.",
+        "Women are not allowed in the inner sanctum during the Aarti.",
+        "Carry a valid government-issued ID for verification.",
+        "Maintain silence and decorum during the entire ritual.",
+        "Do not carry any food or drinks inside the temple premises.",
+    ],
 
 
-ritualSteps: [
-    "Devotees gather in the early morning hours.",
-    "Priests perform Abhishek with sacred ash (Bhasm).",
-    "Chanting of Vedic mantras and use of musical instruments.",
-    "Darshan is allowed after the ritual concludes.",
-    "The Shiva Lingam is bathed with water, milk, curd, honey, and sandalwood paste.",
-    "The Lingam is decorated with bilva leaves, flowers, and sacred cloth.",
-    "Aarti is performed with lit oil lamps amidst chants of 'Om Namah Shivaya' and 'Har Har Mahadev'.",
-    "The ritual concludes with distribution of prasad to devotees.",
-],
+    ritualSteps: [
+        "Devotees gather in the early morning hours.",
+        "Priests perform Abhishek with sacred ash (Bhasm).",
+        "Chanting of Vedic mantras and use of musical instruments.",
+        "Darshan is allowed after the ritual concludes.",
+        "The Shiva Lingam is bathed with water, milk, curd, honey, and sandalwood paste.",
+        "The Lingam is decorated with bilva leaves, flowers, and sacred cloth.",
+        "Aarti is performed with lit oil lamps amidst chants of 'Om Namah Shivaya' and 'Har Har Mahadev'.",
+        "The ritual concludes with distribution of prasad to devotees.",
+    ],
 
 
     offerings: ["Bhasm (Sacred Ash)", "Bel Patra", "Milk", "Water", "Chandan"],
-
-
-    media: {
-        "bhasm_Aarti_Image": bhasmAartiImageUjjain,
-        "historical_significanceImage": historical_significanceImage,
-        "procedureImage": procedureImage,
-
-        video: {
-            url: "https://www.youtube.com/watch?v=example_bhasm_aarti",
-            title: "Watch the Divine Bhasm Aarti Live"
-        }
-    },
 };

@@ -187,6 +187,7 @@ export const Hotels = () => {
                                                 <Image
                                                     src={hotel.heroImage}
                                                     alt={hotel.id}
+                                                    fill
                                                     className={styles.hotelImage}
                                                 />
                                                 {

@@ -175,6 +175,7 @@ const mpHotels = allHotels.filter( hotel => hotel.hotelFor === "mp");
                                                 <Image
                                                     src={hotel.heroImage}
                                                     alt={hotel.id}
+                                                    fill
                                                     className={styles.hotelImage}
                                                 />
                                                 {

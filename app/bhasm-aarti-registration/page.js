@@ -1,19 +1,15 @@
-// app/bhasm-aarti/page.js
 'use client';
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './page.module.css';
 import { SectionHeader } from '../MainLayouts';
-import { CheckCircle, Info } from 'lucide-react';
+import {  Info } from 'lucide-react';
 import { useInternalPageContext } from '../contexts/InternalPagesContext';
 import { bhasmAarti } from "../Data/bhasmAartiData";
 import BhasmAartiBooking from '../components/bhasmAartiVideoComponent';
 
-const v1 = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/bhasmAarti.mp4";
-const cultural_impact = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/cultural_impact.mp4";
-const ujjainLast ="https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/ujjainlast.mp4";
 
 export default function BhasmAarti() {
-    
+
     const [activeTab, setActiveTab] = useState('');
     const tabs = ['dressCode', 'genderRestrictions', 'bookingInfo', 'offerings'
     ];
@@ -28,17 +24,12 @@ export default function BhasmAarti() {
     return (
         <>
 
-        <BhasmAartiBooking/>
+            <BhasmAartiBooking />
 
 
 
             {/* Main Content Container */}
             <div className={styles.container}>
-
-
-                {/* {
-                    showBookingForm && (<BhasmAartiForm setShowBookingForm={setShowBookingForm} />)
-                } */}
 
                 <div>
                     <SectionHeader title="The Soul of Mahakal" />
@@ -46,17 +37,17 @@ export default function BhasmAarti() {
                     <div className={styles.heroGrid3}>
 
                         <div className={styles.videoWrapper}>
-                           <video
-    className={styles.videoElement}
-    src={v1}
-    loop
-    autoPlay
-    muted
-                    playsInline={true}
-    preload="auto"
-    controls={false}
-    disablePictureInPicture
-/>
+                            <video
+                                className={styles.videoElement}
+                                src={bhasmAarti.video1}
+                                loop
+                                autoPlay
+                                muted
+                                playsInline={true}
+                                preload="auto"
+                                controls={false}
+                                disablePictureInPicture
+                            />
 
                             <div className={styles.videoOverlay}></div>
                         </div>
@@ -108,7 +99,7 @@ export default function BhasmAarti() {
                                 {
                                     getListWithoutLines(bhasmAarti["procedure"])
                                 }
-                            </section> 
+                            </section>
 
                         </div>
 
@@ -125,7 +116,7 @@ export default function BhasmAarti() {
                         <section className={styles.section}><Info size={15} className={styles.icon} style={{ marginLeft: '-18px', verticalAlign: 'middle', color: ' #4b5563' }} />
 
                             <span className={styles.listItem2Heading}>
-                               To attend the Bhasma Aarti, devotees must follow strict rules of cleanliness, dress modestly, and arrive well before dawn for security checks and seating.
+                                To attend the Bhasma Aarti, devotees must follow strict rules of cleanliness, dress modestly, and arrive well before dawn for security checks and seating.
                             </span>
                             {
                                 getListWithoutLines(bhasmAarti["guidelines"])
@@ -133,17 +124,17 @@ export default function BhasmAarti() {
                         </section>
 
                         <div className={styles.videoWrapper}>
-                          <video
-    className={styles.videoElement}
-    src={cultural_impact}
-    loop
-    autoPlay
-    muted
-                    playsInline={true}
-    preload="auto"
-    controls={false}
-    disablePictureInPicture
-/>
+                            <video
+                                className={styles.videoElement}
+                                src={bhasmAarti.video2}
+                                loop
+                                autoPlay
+                                muted
+                                playsInline={true}
+                                preload="auto"
+                                controls={false}
+                                disablePictureInPicture
+                            />
 
                             <div className={styles.videoOverlay}></div>
                         </div>
@@ -156,17 +147,17 @@ export default function BhasmAarti() {
                     <div className={styles.heroGrid3}>
 
                         <div className={styles.videoWrapper}>
-                          <video
-    className={styles.videoElement}
-    src={ujjainLast}
-    loop
-    autoPlay
-    muted
-                    playsInline={true}
-    preload="auto"
-    controls={false}
-    disablePictureInPicture
-/>
+                            <video
+                                className={styles.videoElement}
+                                src={bhasmAarti.video3}
+                                loop
+                                autoPlay
+                                muted
+                                playsInline={true}
+                                preload="auto"
+                                controls={false}
+                                disablePictureInPicture
+                            />
 
                             <div className={styles.videoOverlay}></div>
                         </div>
@@ -175,16 +166,16 @@ export default function BhasmAarti() {
                             <Info size={15} className={styles.icon} style={{ marginLeft: '-18px', verticalAlign: 'middle', color: ' #4b5563' }} />
 
                             <span className={styles.listItem2Heading}>
-                               Understand each moment of the ritual—from the preparation of the Lingam to the Abhishek, decoration, and final Aarti—bringing you closer to the divine.
+                                Understand each moment of the ritual—from the preparation of the Lingam to the Abhishek, decoration, and final Aarti—bringing you closer to the divine.
                             </span>
-                          
+
                             {
                                 getListWithoutLines(bhasmAarti["ritualSteps"])
                             }
                         </section>
                     </div>
                 </div>
-               
+
                 <div
                     className={styles.finalContainer}
                 >
@@ -209,9 +200,6 @@ export default function BhasmAarti() {
                         }
                     </section>
                 </div>
-
-                {/* <BhasmAartiBooking/> */}
-
             </div>
 
 

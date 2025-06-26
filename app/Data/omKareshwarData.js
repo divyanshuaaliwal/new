@@ -1,4 +1,16 @@
+
+
+const v1 = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/om1.mp4";
+const v2 = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/om2.mp4";
+const v3 = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/om3.mp4";
+
+
 export const omkareshwarDarshan = {
+
+    video1: v1,
+    video2: v2,
+    video3: v3,
+    
     omkareshwarOverview: [
         "Omkareshwar is a sacred island town located in the Khandwa district of Madhya Pradesh, India.",
         "It is one of the twelve revered Jyotirlinga shrines of Lord Shiva, making it a significant pilgrimage destination.",

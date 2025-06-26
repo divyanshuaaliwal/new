@@ -1,8 +1,14 @@
-// import abhishekImage from "../assets/abhishekImage.png";
-import historical_significanceImage from "../assets/historical_significance.png";  // reuse if same
-import procedureImage from "../assets/procedure.png";  // reuse if same
+const v1 = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/ab1.mp4";
+const v2 = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/ab2.mp4";
+const v3 = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/ab3.mp4";
+
 
 export const abhishekBooking = {
+
+    video1: v1,
+    video2: v2,
+    video3: v3,
+    
     title: "Abhishek Booking at Mahakaleshwar Temple, Ujjain",
 
     theSoulOfMahakal: [
@@ -127,15 +133,4 @@ export const abhishekBooking = {
     ],
 
     offerings: ["Milk", "Honey", "Curd", "Water", "Ghee", "Bilva Leaves", "Flowers", "Sandalwood Paste"],
-
-    media: {
-        // abhishek_Image: abhishekImage,
-        historical_significanceImage: historical_significanceImage,
-        procedureImage: procedureImage,
-
-        video: {
-            url: "https://www.youtube.com/watch?v=example_abhishek_ritual",
-            title: "Watch the Sacred Abhishek Ritual Live"
-        }
-    },
 };

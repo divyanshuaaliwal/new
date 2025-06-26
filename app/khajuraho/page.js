@@ -1,8 +1,6 @@
 // app/bhasm-aarti/page.js
 'use client';
-const v1 = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/k1.mp4";
-const v2 = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/k2.mp4";
-const v3 = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/k3.crdownload";
+
 import styles from './page.module.css';
 import { SectionHeader } from '../MainLayouts';
 import { Star, Info, } from 'lucide-react';
@@ -166,7 +164,7 @@ export default function UjjainDarshan() {
                         <div className={styles.videoWrapper}>
                             <video
     className={styles.videoElement}
-    src={v1}
+    src={khajurahoDarshan.video1}
     loop
     autoPlay
     muted
@@ -238,7 +236,7 @@ export default function UjjainDarshan() {
                         <div className={styles.videoWrapper}>
                         <video
     className={styles.videoElement}
-    src={v2}
+    src={khajurahoDarshan.video2}
     loop
     autoPlay
     muted
@@ -286,7 +284,7 @@ export default function UjjainDarshan() {
                         <div className={styles.videoWrapper}>
                             <video
     className={styles.videoElement}
-    src={v3}
+    src={khajurahoDarshan.video3}
     loop
     autoPlay
     muted

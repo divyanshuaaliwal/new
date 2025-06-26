@@ -5,9 +5,7 @@ import { Star, Info, } from 'lucide-react';
 import { useInternalPageContext } from '../contexts/InternalPagesContext';
 import { ujjainDarshan } from "../Data/ujjainDarshanData";
 import { Clock, MapPin, Sun, Flame } from 'lucide-react';
-const v1 = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/combinedVideo.mp4";
-const spiritual_significance = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/spiritual_significance.mp4";
-const templeVideo = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/templeVideo.mp4";
+
 
 const RitualCard = ({ ritual }) => {
     const { name, description, location, duration, timing, benefits } = ritual;
@@ -164,7 +162,7 @@ export default function UjjainDarshan() {
                         <div className={styles.videoWrapper}>
                             <video
                                 className={styles.videoElement}
-                                src={v1}
+                                src={ujjainDarshan.video}
                                 loop
                                 autoPlay
                                 muted
@@ -236,7 +234,7 @@ export default function UjjainDarshan() {
                         <div className={styles.videoWrapper}>
                             <video
                                 className={styles.videoElement}
-                                src={spiritual_significance}
+                                src={ujjainDarshan.spiritualSignificance}
                                 loop
                                 autoPlay
                                 muted
@@ -281,7 +279,7 @@ export default function UjjainDarshan() {
                         <div className={styles.videoWrapper}>
                             <video
                                 className={styles.videoElement}
-                                src={templeVideo}
+                                src={ujjainDarshan.templeVideo}
                                 loop
                                 autoPlay
                                 muted

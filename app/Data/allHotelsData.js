@@ -1,12 +1,12 @@
 
-import hotel_1 from '../assets/hotel_1.jpg';
-import hotel_2 from '../assets/hotel_2.jpg';
-import hotel_3 from '../assets/hotel_3.jpeg';
-import hotel_4 from '../assets/hotel_4.jpeg';
-import hotel_5 from '../assets/hotel_5.jpeg';
-import hotel_6 from '../assets/hotel_6.jpeg';
-import hotel_7 from '../assets/hotel_7.png';
-import hotel_8 from '../assets/hotel_8.png';
+const hotel_1 = 'https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/allHotels/hotel_1.webp';
+const hotel_2 = 'https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/allHotels/hotel_2.webp';
+const hotel_3 = 'https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/allHotels/hotel_3.webp';
+const hotel_4 = 'https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/allHotels/hotel_4.webp';
+const hotel_5 = 'https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/allHotels/hotel_5.webp';
+const hotel_6 = 'https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/allHotels/hotel_6.webp';
+const hotel_7 = 'https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/allHotels/hotel_7.webp';
+const hotel_8 = 'https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/allHotels/hotel_8.webp';
 
 export const allHotels = [
     {

@@ -1,9 +1,9 @@
-import ss from "../assets/ss.png";
+import securityServices from "../assets/security.png";
 
 export const services = [
     {
         id: 1,
-        image: ss,
+        image: securityServices,
         slug: "elite-celebrity-bodyguard-service-1",
         category: "security-services",
         gallary: ["bodyguard_team1", "secure_vehicle1", "event_security1", "surveillance_setup1"],
@@ -16,7 +16,7 @@ export const services = [
             discount_percentage: 10
         },
         duration: "Per Day",
-        features: ["Discreet Protection", "Crowd Management", "Threat Assessment"],
+        features: ["Discreet Protection", "Crowd Management", "Threat AsecurityServicesesecurityServicesment"],
         starting_point: "Mumbai City Limits",
         ending_point: "Mumbai City Limits",
         specifications: {
@@ -63,7 +63,7 @@ export const services = [
     },
     {
         id: 2,
-        image: ss,
+        image: securityServices,
         slug: "event-security-service-2",
         category: "security-services",
         gallary: ["event_security2", "crowd_control1", "venue_scan1", "secure_entry1"],
@@ -91,8 +91,8 @@ export const services = [
         inclusions: [
             "Event security team",
             "Coordination with local authorities",
-            "Access control systems",
-            "Pre-event risk assessment"
+            "AccesecurityServices control systems",
+            "Pre-event risk asecurityServicesesecurityServicesment"
         ],
         exclusions: [
             "Night allowance (₹2500 extra)",
@@ -123,7 +123,7 @@ export const services = [
     },
     {
         id: 3,
-        image: ss,
+        image: securityServices,
         slug: "secure-transport-service-3",
         category: "security-services",
         gallary: ["armored_vehicle1", "driver_team1", "route_plan1", "secure_exit1"],
@@ -140,9 +140,9 @@ export const services = [
         starting_point: "Mumbai City Limits",
         ending_point: "Mumbai City Limits",
         specifications: {
-            vehicle_type: "Armored Mercedes-Benz S-Class",
+            vehicle_type: "Armored Mercedes-Benz S-ClasecurityServices",
             training: "Defensive Driving Certified",
-            equipment: "GPS Tracking, Bulletproof Glass",
+            equipment: "GPS Tracking, Bulletproof GlasecurityServices",
             response_time: "Immediate"
         },
         coverage: "100 km included (extra ₹800/km)",
@@ -166,7 +166,7 @@ export const services = [
         },
         notes: [
             "Ideal for airport transfers",
-            "Privacy glass included"
+            "Privacy glasecurityServices included"
         ],
         rating: 4.6,
         policies: {
@@ -183,7 +183,7 @@ export const services = [
     },
     {
         id: 4,
-        image: ss,
+        image: securityServices,
         slug: "residential-security-service-4",
         category: "security-services",
         gallary: ["residence_security1", "cctv_setup1", "gate_control1", "patrol_team1"],
@@ -196,7 +196,7 @@ export const services = [
             discount_percentage: 10
         },
         duration: "Per Month",
-        features: ["24/7 Surveillance", "Access Control", "Perimeter Patrol"],
+        features: ["24/7 Surveillance", "AccesecurityServices Control", "Perimeter Patrol"],
         starting_point: "Bangalore City Limits",
         ending_point: "Bangalore City Limits",
         specifications: {
@@ -243,13 +243,13 @@ export const services = [
     },
     {
         id: 5,
-        image: ss,
+        image: securityServices,
         slug: "tour-security-service-5",
         category: "security-services",
         gallary: ["tour_security1", "convoy_team1", "venue_check1", "crowd_management1"],
         service_type: "Tour Security",
         package_name: "Celebrity Tour Protection Package",
-        overview: "Comprehensive security for celebrity tours, covering travel, venues, and crowd management across multiple locations.",
+        overview: "Comprehensive security for celebrity tours, covering travel, venues, and crowd management acrosecurityServices multiple locations.",
         pricing: {
             original_price: 300000,
             current_price: 270000,
@@ -303,7 +303,7 @@ export const services = [
     },
     {
         id: 6,
-        image: ss,
+        image: securityServices,
         slug: "female-bodyguard-service-6",
         category: "security-services",
         gallary: ["female_bodyguard1", "discreet_protection1", "event_security2", "secure_vehicle2"],
@@ -346,7 +346,7 @@ export const services = [
         },
         notes: [
             "Ideal for female celebrities",
-            "Access to private areas ensured"
+            "AccesecurityServices to private areas ensured"
         ],
         rating: 4.7,
         policies: {
@@ -363,7 +363,7 @@ export const services = [
     },
     {
         id: 7,
-        image: ss,
+        image: securityServices,
         slug: "digital-security-service-7",
         category: "security-services",
         gallary: ["cyber_security1", "surveillance_monitor1", "data_protection1", "device_security1"],
@@ -418,12 +418,12 @@ export const services = [
             name: "Anita Desai",
             experience: "5 years",
             languages: ["Hindi", "English"],
-            certifications: ["CISSP", "Ethical Hacker"]
+            certifications: ["CIsecurityServicesP", "Ethical Hacker"]
         }
     },
     {
         id: 8,
-        image: ss,
+        image: securityServices,
         slug: "emergency-response-service-8",
         category: "security-services",
         gallary: ["emergency_team1", "medical_support1", "evacuation_plan1", "crisis_response1"],
@@ -483,7 +483,7 @@ export const services = [
     },
     {
         id: 9,
-        image: ss,
+        image: securityServices,
         slug: "travel-security-service-9",
         category: "security-services",
         gallary: ["travel_security1", "airport_escort1", "secure_vehicle3", "route_plan2"],
@@ -516,7 +516,7 @@ export const services = [
         ],
         exclusions: [
             "Night allowance (₹2500 extra)",
-            "Visa processing fees",
+            "Visa procesecurityServicesing fees",
             "Additional travel days"
         ],
         contact: {
@@ -543,7 +543,7 @@ export const services = [
     },
     {
         id: 10,
-        image: ss,
+        image: securityServices,
         slug: "paparazzi-management-service-10",
         category: "security-services",
         gallary: ["paparazzi_control1", "crowd_management2", "discreet_exit1", "media_security1"],

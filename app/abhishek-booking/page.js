@@ -1,4 +1,3 @@
-// app/bhasm-aarti/page.js
 'use client';
 import { useEffect, useState } from 'react';
 import styles from './page.module.css';
@@ -8,9 +7,6 @@ import { useInternalPageContext } from '../contexts/InternalPagesContext';
 import { abhishekBooking } from "../Data/abhishekBooking";
 import AbhishekBooking from '../components/AbhishekBookingVideoComponent';
 
-const v1 = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/ab1.mp4";
-const cultural_impact = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/ab2.mp4";
-const ujjainLast = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/ab3.mp4";
 
 export default function BhasmAarti() {
 
@@ -38,17 +34,17 @@ export default function BhasmAarti() {
                     <div className={styles.heroGrid3}>
 
                         <div className={styles.videoWrapper}>
-                       <video
-    className={styles.videoElement}
-    src={v1}
-    loop
-    autoPlay
-    muted
-                    playsInline={true}
-    preload="auto"
-    controls={false}
-    disablePictureInPicture
-/>
+                            <video
+                                className={styles.videoElement}
+                                src={abhishekBooking.video1}
+                                loop
+                                autoPlay
+                                muted
+                                playsInline={true}
+                                preload="auto"
+                                controls={false}
+                                disablePictureInPicture
+                            />
 
                             <div className={styles.videoOverlay}></div>
                         </div>
@@ -125,17 +121,17 @@ export default function BhasmAarti() {
                         </section>
 
                         <div className={styles.videoWrapper}>
-                           <video
-    className={styles.videoElement}
-    src={cultural_impact}
-    loop
-    autoPlay
-    muted
-                    playsInline={true}
-    preload="auto"
-    controls={false}
-    disablePictureInPicture
-/>
+                            <video
+                                className={styles.videoElement}
+                                src={abhishekBooking.video2}
+                                loop
+                                autoPlay
+                                muted
+                                playsInline={true}
+                                preload="auto"
+                                controls={false}
+                                disablePictureInPicture
+                            />
 
                             <div className={styles.videoOverlay}></div>
                         </div>
@@ -148,17 +144,17 @@ export default function BhasmAarti() {
                     <div className={styles.heroGrid3}>
 
                         <div className={styles.videoWrapper}>
-                           <video
-    className={styles.videoElement}
-    src={ujjainLast}
-    loop
-    autoPlay
-    muted
-                    playsInline={true}
-    preload="auto"
-    controls={false}
-    disablePictureInPicture
-/>
+                            <video
+                                className={styles.videoElement}
+                                src={abhishekBooking.video3}
+                                loop
+                                autoPlay
+                                muted
+                                playsInline={true}
+                                preload="auto"
+                                controls={false}
+                                disablePictureInPicture
+                            />
 
                             <div className={styles.videoOverlay}></div>
                         </div>
@@ -180,7 +176,7 @@ export default function BhasmAarti() {
                 <div className={styles.finalContainer}>
                     <div className={styles.tabContainer}>
                         {
-                            tabs.map( (tab) => (
+                            tabs.map((tab) => (
                                 <button
                                     key={tab}
                                     className={`${styles.tabButton} ${activeTab === tab ? styles.active : ''}`}

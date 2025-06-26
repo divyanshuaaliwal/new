@@ -1,4 +1,13 @@
+const v1 = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/k1.mp4";
+const v2 = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/k2.mp4";
+const v3 = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/k3.crdownload";
+
 export const khajurahoDarshan = {
+
+  video1: v1,
+  video2: v2,
+  video3: v3,
+
   khajurahoOverview: [
     "Khajuraho is a famous historic town in the Chhatarpur district of Madhya Pradesh, India.",
     "It is best known for its group of medieval Hindu and Jain temples famous for their stunning architecture.",
@@ -96,7 +105,7 @@ export const khajurahoDarshan = {
     }
   ],
 
-  ghats : [
+  ghats: [
     {
       name: "Ken River Bank",
       description: "Scenic riverbank near Khajuraho ideal for relaxation and evening walks.",

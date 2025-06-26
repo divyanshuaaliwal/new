@@ -1,4 +1,13 @@
+const maheshwarDarshanvideo1 = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/m3.mp4";
+const maheshwarDarshanvideo2 = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/m2.mp4";
+const maheshwarDarshanvideo3 = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/m1.mp4";
+
 export const maheshwarDarshan = {
+
+  video1:maheshwarDarshanvideo1,
+  video2:maheshwarDarshanvideo2,
+  video3:maheshwarDarshanvideo3,
+
   maheshwarOverview: [
     "Maheshwar is a historic town located in the Khargone district of Madhya Pradesh, India.",
     "Situated on the north bank of the Narmada River, it is renowned for its spiritual significance and architectural beauty.",
