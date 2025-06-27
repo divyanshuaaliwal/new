@@ -9,6 +9,7 @@ import ThingsToDoInUjjain from './components/ThingsToDoInUjjain';
 import Awards from './components/Awards';
 import Contact from './components/Contact';
 
+
 export default function Home() {
     return (
         <>

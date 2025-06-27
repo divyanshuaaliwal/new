@@ -1,11 +1,13 @@
 import './globals.css';
 import ClientProviders from './ClientProviders';
 import Script from 'next/script';
+import { getMetaData } from "@/app/Data/metaDataJson";
 
-export const metadata = {
-    title: 'Ujjain Mahakal',
-    description: 'Spiritual Tour Website',
-};
+
+export async function generateMetadata() {
+    const url = `https://ujjainmahakal.com/`
+    return getMetaData(url);
+}
 
 export default function RootLayout({ children }) {
     return (

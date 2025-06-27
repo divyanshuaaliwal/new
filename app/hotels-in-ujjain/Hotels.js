@@ -11,7 +11,7 @@ import { useSearchParams } from "next/navigation";
 
 const allUjjainHotels = allHotels.filter( (hotel) => hotel.hotelFor === "ujjain");
 
-export const Hotels = () => {
+const Hotels = () => {
 
     const searchParams = useSearchParams();
     
@@ -298,3 +298,4 @@ export const Hotels = () => {
         </div>
     );
 }
+export default Hotels;
