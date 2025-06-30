@@ -10,9 +10,8 @@ const VideoSlide = ({ video }) => {
 
         if (!video || !videoElement) return;
 
-        // Ensure it doesn't auto-play before being ready
         videoElement.pause();
-        videoElement.removeAttribute('src'); // Clear old source if any
+        videoElement.removeAttribute('src'); 
         videoElement.load();
 
         const handleCanPlay = () => {
@@ -43,12 +42,12 @@ const VideoSlide = ({ video }) => {
                 loop
                 autoPlay
                 muted
-                playsInline={true} // ✅ correct boolean syntax
+                playsInline={true} 
                 preload="auto"
                 controls={false}
                 disablePictureInPicture
             />
-            <div className={styles.videoOverlay}></div>
+            {/* <div className={styles.videoOverlay}></div> */}
         </div>
     );
 };

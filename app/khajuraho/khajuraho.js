@@ -1,4 +1,3 @@
-// app/bhasm-aarti/page.js
 'use client';
 
 import styles from './khajuraho.module.css';

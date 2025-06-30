@@ -4,7 +4,6 @@ import { useState } from 'react';
 import styles from './bhasmAartiVideoComponent.module.css';
 
 const v1 = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/bhasmAarti.mp4";
-// const v1 = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/Ujjain.mp4";
 export default function AbhishekBooking() {
     const today = new Date();
     const [currentDate, setCurrentDate] = useState(today);
@@ -123,7 +122,14 @@ export default function AbhishekBooking() {
     return (
         <>
             {/* 🔊 Video Background */}
-            <video autoPlay loop muted className={styles.videoBackground}>
+            <video   
+                loop
+                autoPlay
+                muted
+                playsInline={true} 
+                preload="auto"
+                controls={false}
+                disablePictureInPicture className={styles.videoBackground}>
                 <source src={v1} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
@@ -237,8 +243,8 @@ export default function AbhishekBooking() {
                                             value={formData.nationality}
                                             onChange={handleInputChange}
                                         >
-                                            <option value="Indian">Indian</option>
-                                            <option value="Foreigner">Foreigner</option>
+                                          <option className={styles.optionsColour} value="Indian">Indian</option>
+                                            <option className={styles.optionsColour}  value="Foreigner">Foreigner</option>
                                         </select>
                                     </div>
                                     <div className={styles.formGroup}>

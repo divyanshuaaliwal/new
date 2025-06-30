@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import {useState } from "react";
 import styles from "./Contact.module.css";
 import { SectionHeader, Wrapper } from "../MainLayouts";
 import { MapPin, Phone, Mail } from "lucide-react";

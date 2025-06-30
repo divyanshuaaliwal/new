@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
 import styles from "./TwoButtons.module.css";
-// import { ArrowRight } from 'lucide-react';
 
 const TwoButtons = ({category, slug}) => {
 

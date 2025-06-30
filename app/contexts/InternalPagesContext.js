@@ -9,13 +9,13 @@ const InternalPageContext = createContext();
 
 export const InternalPageContextProvider = ({ children }) => {
 
-   function getSubtitle(tab) {
-    if (!tab || typeof tab !== 'string') return '';
-    return tab
-        .replaceAll(/([A-Z_])/g, ' $1')
-        .replaceAll(/_/g, '')
-        .replace(/^./, char => char.toUpperCase());
-}
+    function getSubtitle(tab) {
+        if (!tab || typeof tab !== 'string') return '';
+        return tab
+            .replaceAll(/([A-Z_])/g, ' $1')
+            .replaceAll(/_/g, '')
+            .replace(/^./, char => char.toUpperCase());
+    }
 
 
     function getObjectDataListOrArrayDataList(data) {
@@ -36,7 +36,7 @@ export const InternalPageContextProvider = ({ children }) => {
                     }
                 </ul>
             );
-        } 
+        }
         else if (data && typeof data === 'object') {
             return (
                 <ul>
@@ -61,7 +61,7 @@ export const InternalPageContextProvider = ({ children }) => {
                     }
                 </ul>
             );
-        } 
+        }
         else {
             return (
                 <ul>
@@ -92,7 +92,7 @@ export const InternalPageContextProvider = ({ children }) => {
                     }
                 </ul>
             );
-        } 
+        }
         else if (data && typeof data === 'object') {
             return (
                 <ul>
@@ -117,7 +117,7 @@ export const InternalPageContextProvider = ({ children }) => {
                     }
                 </ul>
             );
-        } 
+        }
         else {
             return (
                 <ul>

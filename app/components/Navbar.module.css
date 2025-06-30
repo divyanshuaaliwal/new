@@ -1,17 +1,13 @@
 .navbarContainer {
     position: relative;
     width: 100%;
-     background: linear-gradient(to right, #f17525, #e46e0f, #d45600);
+    background: linear-gradient(to right, #f17525, #e46e0f, #d45600);
 }
 
 /* Top Navigation */
 .topNav {
     background: linear-gradient(to right, #f17525, #e46e0f, #d45600);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    transition: all 0.3s ease;
+    padding: 0 1rem;
 }
 
 
@@ -497,49 +493,24 @@
 
 /* Bottom Navigation */
 .bottomNav {
-    /* position: sticky;
-    bottom: 0;
+    padding: 0 0.2rem;
     width: 100%;
-    z-index: 100; */
-
-     width: 100%;
     background: linear-gradient(to right, #f17525, #e46e0f, #d45600);
-    display: flex;
-    /* flex-wrap: wrap; */
-    /* gap: 10px; */
-    justify-content: center;
-    transition: all 0.3s ease;
 }
 
-.container {
-    padding: 0 1rem;
-    width: 100%;
-}
 
 .container2 {
-    padding: 0 1rem;
     width: 100%;
 }
 
-.TopNavList {
+.TopNavList, 
+.navList  {
     display: flex;
     justify-content: space-between;
-    width: 90%;
     flex-wrap: wrap;
     margin: 0 auto;
     list-style: none;
 }
-
-.navList {
-
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    list-style: none;
-}
-
 .navItem {
     position: relative;
 }
@@ -547,13 +518,14 @@
 .navTitle {
     color: white;
     text-decoration: none;
-    font-weight: 500;
+    /* font-weight: bold; */
     display: flex;
     align-items: center;
     padding: 1rem 0.5rem;
     transition: background-color 0.3s ease, color 0.3s ease;
     white-space: nowrap;
     position: relative;
+    font-size: 1.1rem;
 }
 
 .navTitle::after {
@@ -757,10 +729,11 @@
         width: 100%;
     }
 
-    .navbarContainer {
-
-        /* height: 56px; */
+    .container2 {
+        width: 100%;
     }
+
+
 }
 
 .dropdownBottom::-webkit-scrollbar {

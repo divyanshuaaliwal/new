@@ -3,9 +3,7 @@ import Link from 'next/link';
 import styles from './MahakalTourPackages.module.css';
 import { allHotels } from "../Data/allHotelsData";
 import Image from 'next/image';
-import { MapPin, Star, Sparkles, 
-    // CheckCircle, Ban, Gem
-} from 'lucide-react';
+import { MapPin, Star, Sparkles} from 'lucide-react';
 import { SectionHeader, Wrapper } from '../MainLayouts';
 import TwoButtons from '../components/TwoButtons';
 
@@ -46,20 +44,6 @@ const PackageCard = ({ pkg }) => {
                 </div>
 
                 <div className={styles.packageDetails}>
-                    {/* <div>
-                        <h4>
-                            < size={16} style={{ marginRight: 6, display: 'inline' }} />
-                            Includes:
-                        </h4>
-                        <ul>
-                            {
-                                pkg.amenities.slice(0, 3).map((item, idx) => (
-                                    <li key={idx}>{item}</li>
-                                ))
-                            }
-                        </ul>
-                    </div> */}
-
                     {
                         pkg.cancellationPolicy?.length > 0 && (
                             <div>
@@ -78,50 +62,8 @@ const PackageCard = ({ pkg }) => {
                             </div>
                         )
                     }
-
-                    {/* {
-                        pkg.specialServices?.length > 0 && (
-                            <div>
-                                <h4>
-                                    <Gem size={16} style={{ marginRight: 6, display: 'inline' }} />
-                                    Special Services:
-                                </h4>
-                                <ul>
-                                    {
-                                        pkg.specialServices.slice(0, 3).map((item, idx) => (
-                                            <li key={idx}>{item}</li>
-                                        ))
-
-                                    }
-                                </ul>
-                            </div>
-                        )
-                    } */}
                 </div>
-
-                {/* <div className={styles.cardFooter}>
-                    <Link
-                        href={`/book-now?package=${pkg.id}`}
-                        className={`${styles.bookButton} ${!pkg.available ? styles.disabledButton : ''}`}
-                    >
-                        {
-                            pkg.available ? (
-                                <>
-                                    Book This Package{' '}
-                                    <ArrowRightCircle size={18} style={{ verticalAlign: 'middle', marginLeft: 6 }} />
-                                </>
-                            ) : (
-                                <>
-                                    Currently Unavailable{' '}
-                                    <Ban size={16} style={{ verticalAlign: 'middle', marginLeft: 6 }} />
-                                </>
-                            )
-                        }
-                    </Link>
-                </div> */}
-
-
-
+                
                 <TwoButtons category={"hotels-in-ujjain"} slug={pkg.slug} />
 
             </div>

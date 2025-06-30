@@ -14,13 +14,6 @@
     margin: 0;
 }
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-
 section::-webkit-scrollbar {
     width: 6px;
 }
@@ -33,12 +26,8 @@ section::-webkit-scrollbar-track {
 section::-webkit-scrollbar-thumb {
     background-color: var(--color-primary-orange);
     border-radius: 9999px;
-
-    /* Simulate short hook */
     border-top: 2px solid transparent;
     border-bottom: 2px solid transparent;
     background-clip: padding-box;
-    /* Trick to make the hook look smaller but keep border-radius visible */
     box-shadow: inset 0 10px 0 var(--color-primary-orange), inset 0 10px 0 var(--color-primary-orange);
-    ;
 }

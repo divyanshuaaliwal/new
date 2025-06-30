@@ -177,6 +177,7 @@ export default function MPTours() {
                                                 <Image
                                                     src={tour.image}
                                                     alt={tour.id}
+                                                    fill
                                                     className={styles.tourImage}
                                                 />
                                                 {

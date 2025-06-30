@@ -1,13 +1,15 @@
 
-import BhopalOmkareshwar from "../assets/BhopalOmkareshwar.png";
-import BhopalUjjain from "../assets/BhopalUjjain.png";
-import BhopalUjjainOmkareshwarTour from "../assets/BhopalUjjainOmkareshwarTour.png";
-import IndoreOmkareshwarTourImage from "../assets/IndoreOmkareshwarTourImage.png";
-import IndoreUjjainOmkareshwarImage from "../assets/IndoreUjjainOmkareshwarImage.png";
-import IndoreUjjainTour from "../assets/IndoreUjjainTour.png";
-import OmkareshwarTourImage from "../assets/OmkareshwarTourImage.png";
-import UjjainOmkareshwarTourImage from "../assets/UjjainOmkareshwarTourImage.png";
-import UjjainTourImage from "../assets/UjjainTourImage.png";
+const hoi = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/mpTours/hoi.webp";
+const jrt = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/mpTours/jrt.webp";
+const mmpt = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/mpTours/mmpt.webp";
+const mpsc = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/mpTours/mpsc.webp";
+const mtmp = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/mpTours/mtmp.webp";
+const rsmt = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/mpTours/rsmt.webp";
+const saw = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/mpTours/saw.webp";
+const cme = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/mpTours/cme.webp";
+const mddt = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/mpTours/mddt.webp";
+const mpwn = "https://sin1.contabostorage.com/d1fa3867924f4c149226431ef8cbe8ee:ujjain/mpTours/mpwn.webp";
+
 
 
 export const allMPTours = [
@@ -16,7 +18,7 @@ export const allMPTours = [
         "id": 1,
         "title": "Madhya Pradesh Spiritual Circuit – 6 Days / 5 Nights",
         "slug": "madhya-pradesh-spiritual-circuit-6-days-5-nights-0",
-        "image": UjjainTourImage,
+        "image": mpsc,
         "subtitle": "3-Day Complete Spiritual Experience",
         "tourFor": "ujjain-omkareshwar",
         "category": "Religious Tour",
@@ -94,7 +96,7 @@ export const allMPTours = [
         "id": 2,
         "title": "Heart of India Heritage Tour – 8 Days / 7 Nights",
         "slug": "heart-of-india-heritage-tour-8-days-7-nights-1",
-        "image": OmkareshwarTourImage,
+        "image": hoi,
         "subtitle": "2-Day Divine Island Experience",
         "tourFor": "ujjain-omkareshwar",
         "category": "Religious Tour",
@@ -167,7 +169,7 @@ export const allMPTours = [
         "id": 3,
         "title": "Jyotirlinga and River Trail – 5 Days / 4 Nights",
         "slug": "jyotirlinga-and-river-trail-5-days-4-nights-2",
-        "image": UjjainOmkareshwarTourImage,
+        "image": jrt,
         "subtitle": "4-Day Twin Jyotirlinga Experience",
         "tourFor": "ujjain-omkareshwar",
         "category": "Religious Tour",
@@ -250,7 +252,7 @@ export const allMPTours = [
         "id": 4,
         "title": "Royal and Sacred MP Tour – 7 Days / 6 Nights",
         "slug": "royal-and-sacred-mp-tour-7-days-6-nights-3",
-        "image": IndoreUjjainTour,
+        "image": rsmt,
         "subtitle": "4-Day City Life & Divine Experience",
         "tourFor": "ujjain-omkareshwar",
         "category": "Cultural & Religious Tour",
@@ -334,7 +336,7 @@ export const allMPTours = [
         "id": 5,
         "title": "Madhya Pradesh Wildlife and Nature Tour – 6 Days / 5 Nights",
         "slug": "madhya-pradesh-wildlife-and-nature-tour-6-days-5-nights-4",
-        "image": IndoreOmkareshwarTourImage,
+        "image": mpwn,
         "subtitle": "3-Day Urban Culture & Sacred Island",
         "tourFor": "ujjain-omkareshwar",
         "category": "Cultural & Religious Tour",
@@ -412,7 +414,7 @@ export const allMPTours = [
         "id": 6,
         "title": "Mystic Madhya Pradesh Tour – 10 Days / 9 Nights",
         "slug": "mystic-madhya-pradesh-tour-10-days-9-nights-5",
-        "image": BhopalUjjain,
+        "image": mmpt,
         "subtitle": "4-Day Lakes, History & Divine Experience",
         "tourFor": "ujjain-omkareshwar",
         "category": "Cultural & Religious Tour",
@@ -495,7 +497,7 @@ export const allMPTours = [
         "id": 7,
         "title": "Mahadev Trail of MP – 5 Days / 4 Nights",
         "slug": "mahadev-trail-of-mp-5-days-4-nights-6",
-        "image": BhopalOmkareshwar,
+        "image": mtmp,
         "subtitle": "3-Day Capital City & Divine Island",
         "tourFor": "ujjain-omkareshwar",
         "category": "Cultural & Religious Tour",
@@ -573,7 +575,7 @@ export const allMPTours = [
         "id": 8,
         "title": "Spiritual and Architectural Wonders of MP – 7 Days / 6 Nights",
         "slug": "spiritual-and-architectural-wonders-of-mp-7-days-6-nights-7",
-        "image": IndoreUjjainOmkareshwarImage,
+        "image": saw,
         "subtitle": "5-Day Complete Madhya Pradesh Experience",
         "tourFor": "ujjain-omkareshwar",
         "category": "Cultural & Religious Tour",
@@ -663,7 +665,7 @@ export const allMPTours = [
         "id": 9,
         "title": "MP Darshan Deluxe Tour – 9 Days / 8 Nights",
         "slug": "mp-darshan-deluxe-tour-9-days-8-nights-8",
-        "image": BhopalUjjainOmkareshwarTour,
+        "image": mddt,
         "subtitle": "5-Day Capital, Temples & Sacred Island",
         "tourFor": "ujjain-omkareshwar-maheshwar",
         "category": "Cultural & Religious Tour",
@@ -764,7 +766,7 @@ export const allMPTours = [
         "id": 10,
         "title": "Complete Madhya Pradesh Experience – 12 Days / 11 Nights",
         "slug": "complete-madhya-pradesh-experience-12-days-11-nights-9",
-        "image": BhopalUjjainOmkareshwarTour,
+        "image": cme,
         "subtitle": "5-Day Capital, Temples & Sacred Island",
         "tourFor": "ujjain-omkareshwar-maheshwar",
         "category": "Cultural & Religious Tour",
