@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './itemEnquiry.module.css';
 import { InternalPageHeading } from '../../../MainLayouts';
 import { useParams } from 'next/navigation';
@@ -7,16 +7,8 @@ import { useParams } from 'next/navigation';
 const UserEnquiryForm = () => {
 
         const {category, slug} = useParams();
-    
-    
         const [formData, setFormData] = useState({
-            
-        });
-
-        
-        useState( () => (
-            setFormData({
-                name: '',
+             name: '',
                 email: '',
                 phone: '',
                 subject: '',
@@ -27,9 +19,8 @@ const UserEnquiryForm = () => {
                 pincode: '',
                 packageCategory:  category,
                 packageSlug: slug,
-            })
-        ), []
-        )
+        });
+        
 
     const [errors, setErrors] = useState({});
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -122,6 +113,8 @@ const UserEnquiryForm = () => {
                 return 'Security Service Package';
             case 'luxury-cars':
                return 'Luxury Car Package';
+            case 'darshan-booking':
+                return 'Darshan Booking Package';
             default:
                 return 'Package'; // default fallback
         }
@@ -164,14 +157,19 @@ const UserEnquiryForm = () => {
                                     disabled
                                     id={slug}
                                     name={slug}
-                                    value={
-                                        slug
-                                            .replaceAll('-', ' ')               // replace hyphens with spaces
-                                            .split(' ')                        // split into words
-                                            .slice(0, -1)                     // remove the last word
-                                            .map(word => word.charAt(0).toUpperCase() + word.slice(1)) // capitalize
-                                            .join(' ')                       // join back to string
-                                    }
+                                   value={
+    (() => {
+        const words = slug.replaceAll('-', ' ').split(' ');
+        const lastWord = words[words.length - 1];
+        if (!isNaN(lastWord)) {
+            words.pop(); // remove last word if it's a number
+        }
+        return words
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(' ');
+    })()
+}
+
                                     className={styles.fixedInput}
                                 />
                             </div>

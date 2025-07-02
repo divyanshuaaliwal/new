@@ -7,7 +7,8 @@
 /* Top Navigation */
 .topNav {
     background: linear-gradient(to right, #f17525, #e46e0f, #d45600);
-    padding: 0 1rem;
+        padding: 0 1rem;
+
 }
 
 
@@ -207,7 +208,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100dvh;
     width: 100%;
     z-index: 2000;
     display: flex;
@@ -493,7 +494,7 @@
 
 /* Bottom Navigation */
 .bottomNav {
-    padding: 0 0.2rem;
+    padding: 0 1rem;
     width: 100%;
     background: linear-gradient(to right, #f17525, #e46e0f, #d45600);
 }
@@ -736,18 +737,18 @@
 
 }
 
-.dropdownBottom::-webkit-scrollbar {
+.innerDropdown::-webkit-scrollbar {
     width: 3px;
 }
 
 
-.dropdownBottom::-webkit-scrollbar-track {
-    background: tra;
+.innerDropdown::-webkit-scrollbar-track {
+    background: transparent;
     border-radius: 9999px;
 }
 
 
-.dropdownBottom::-webkit-scrollbar-thumb {
+.innerDropdown::-webkit-scrollbar-thumb {
     background-color: #e46e0f;
     border-radius: 9999px;
     border-top: 2px solid transparent;

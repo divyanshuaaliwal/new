@@ -4,13 +4,7 @@ import Link from 'next/link';
 import { Facebook, Twitter, Instagram, Mail, Phone, MapPin, Video, Star, Award } from 'lucide-react';
 import styles from './Footer.module.css';
 
-const navLinks = [
-    { id: 1, title: 'Home', url: '/' },
-    { id: 2, title: 'About Us', url: '/about' },
-    { id: 3, title: 'Darshan Booking', url: '/darshan-booking' },
-    { id: 4, title: 'Gallery', url: '/gallery' },
-    { id: 5, title: 'Contact', url: '/contact' },
-];
+import { footerData } from '../Data/footerData';
 
 function Footer() {
     const currentYear = new Date().getFullYear();
@@ -36,7 +30,7 @@ function Footer() {
                     <div className={styles.section}>
                         <h4 className={styles.title}>Quick Links</h4>
                         <ul className={styles.linkList}>
-                            {navLinks.map(link => (
+                            {footerData.quickLinks.map(link => (
                                 <li key={link.id}>
                                     <Link href={link.url} className={styles.link}>
                                         {link.title}

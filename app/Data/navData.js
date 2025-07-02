@@ -103,23 +103,30 @@ export const navMenu = [
         title: "Registration",
         dropdown: true,
         dropdownItems: [
-            { title: "Bhasm Aarti Registration", path: "/bhasm-aarti-registration", },
-            { title: "Abhishek Booking", path: "/abhishek-booking" },
-        ]
+            { 
+                title: "Bhasm Aarti Registration", path: "/bhasm-aarti-registration", 
+            },
+            { 
+                title: "Abhishek Booking", path: "/abhishek-booking" 
+            },
+            {
+                title: "Pooja Booking",
+                path: "/pooja-booking",
+                innerDropdown: true,
+                innerDropdownItems: pujaData.map( pooja => (
+                        {
+                            innerTitle: pooja.title,
+                            path: `/pooja-booking/${pooja.slug}`,
+                        }
+                    )
+                )
+            },
+        ],
     },
     {
         title: "VIP Darshan",
         path: "/vip-darshan",
         dropdown: false,
-    },
-    {
-        title: "Pooja Booking",
-        path: "/pooja-booking",
-        dropdown: true,
-        dropdownItems : pujaData.map((pooja) => ({
-            title: pooja.title,
-            path: `/pooja-booking/${pooja.slug}`,
-        }))     
     },
     
     {

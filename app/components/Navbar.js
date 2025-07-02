@@ -315,24 +315,29 @@ export default function Navbar() {
                                                                     )}
                                                                 </Link>
 
-                                                                {subItem.innerDropdown &&
-                                                                    activeInnerDropdown === subItem.title &&
-                                                                    subItem.innerDropdownItems?.length > 0 && (
-                                                                        <ul className={styles.innerDropdown}>
-                                                                            {subItem.innerDropdownItems.map(
-                                                                                (innerItem, innerIndex) => (
-                                                                                    <li key={innerIndex}>
-                                                                                        <Link
-                                                                                            href={innerItem.path || "/"}
-                                                                                            className={styles.innerDropdownLink}
-                                                                                        >
-                                                                                            {innerItem.innerTitle}
-                                                                                        </Link>
-                                                                                    </li>
-                                                                                )
-                                                                            )}
-                                                                        </ul>
-                                                                    )}
+                                                              {subItem.innerDropdown &&
+                                                                activeInnerDropdown === subItem.title &&
+                                                                subItem.innerDropdownItems?.length > 0 && (
+                                                                    <ul
+                                                                        className={`${styles.innerDropdown} ${
+                                                                            subItem.innerDropdownItems.some((di) => di.innerDropdown)
+                                                                                ? ""
+                                                                                : styles.active
+                                                                        }`}
+                                                                    >
+                                                                        {subItem.innerDropdownItems.map((innerItem, innerIndex) => (
+                                                                            <li key={innerIndex}>
+                                                                                <Link
+                                                                                    href={innerItem.path || "/"}
+                                                                                    className={styles.innerDropdownLink}
+                                                                                >
+                                                                                    {innerItem.innerTitle}
+                                                                                </Link>
+                                                                            </li>
+                                                                        ))}
+                                                                    </ul>
+                                                                )}
+
                                                             </li>
                                                         ))}
                                                     </ul>
